@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Squadfree Bootstrap Template - Index</title>
+    <title>CURATION IN SW EDUCATION</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -61,14 +61,14 @@
     <div class="hero-container" data-aos="fade-up">
         <h1>Curation in SW Education</h1>
         <h2>What we curate is more important than what we learn</h2>
-        <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+        <a href="/#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
 </section><!-- End Hero -->
 
 <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" name="about">
         <div class="container">
 
             <div class="row no-gutters">
@@ -118,9 +118,9 @@
         <div class="container" data-aos="zoom-in">
 
             <div class="text-center">
-                <h3>Explore</h3>
+                <h3>Call To SW Education</h3>
                 <p> Do you want to become a SW expert in a short time? Meet free coding programs selected by the SW Education Curator every day!</p>
-                <a class="cta-btn" href="/lecture/">Call To SW Education</a>
+                <a class="cta-btn" href="/lecture/">Explore</a>
             </div>
 
         </div>
@@ -277,9 +277,9 @@
     <section id="contact" class="contact section-bg">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Contact</h2>
-                <p>For those who want to receive new software training information every day, or for business partnership or advertising inquiries, please contact below.</p>
+            <div class="section-title" >
+                <h2 style="color:#5d9bb5">Contact</h2>
+                <p style="color:#b5b5b8">For those who want to receive new software training information every day, or for business partnership or advertising inquiries, please contact below.</ptext-white>
             </div>
 
             <div class="row">
@@ -287,7 +287,7 @@
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
                         <h3>Our Address</h3>
-                        <p>9-4, Cheongdam-dong, Gangnam-gu, Seoul</p>
+                        <p>서울 강남구 언주로 508 서울상록빌딩 10층~17층 (멀티캠퍼스 본사)</p>
                     </div>
                 </div>
 
@@ -312,8 +312,31 @@
             <div class="row">
 
                 <div class="col-lg-6 ">
-                    <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                    <div id="map" style="width: 100%; height: 384px;"></div>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68872f2c22daa56457ef3993c047bd66&libraries=services"></script>
+                    <script>
+                        let mapContainer = document.getElementById('map');
+                        let mapOption = {
+                            center: new kakao.maps.LatLng(37.503959655762,127.04273986816),
+                            level: 5
+                        };
+
+                        let map = new kakao.maps.Map(mapContainer, mapOption);
+
+                        // 마커가 표시될 위치입니다
+                        var markerPosition  = new kakao.maps.LatLng(37.503959655762,127.04273986816);
+
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        marker.setMap(map);
+
+                    </script>
                 </div>
+
 
                 <div class="col-lg-6">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">

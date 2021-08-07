@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
+
+{% block title %}
+searching
+{% endblock %}
+
+
 {% block main_area %}
 <style>
     span{
@@ -30,7 +36,7 @@
             {% endfor %}
             <a href="/lecture/category/no_category">미분류</a>
         </div>
-        <div class="list-group" id="categories-card">
+        <div>
             <form id="rescan" name="rescan" action="{% url 'common:searched_lecture' %}" method="post">
                 {% csrf_token %}
 				{% include "form_errors.html" %}
