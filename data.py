@@ -17,7 +17,7 @@ with open(CSV_PATH, 'r', newline='') as csvfile:
 
 ss = []
 for i in range(len(s)):
-	st = (s['title'][i], s['category'][i], s['skill_covered'][i], s['content'][i])
+	st = (s['title'][i], s['content'][i], s['category'][i], s['level'][i], s['period'][i], s['student'][i], s['skill_covered'][i], s['pre_ready'][i])
 	ss.append(st)
 for i in range(len(s)):
-	Lecture.objects.create(class_name=ss[i][0], subject=ss[i][1], detail_subject=ss[i][2], content=ss[i][3])
+	Lecture.objects.create(class_name=ss[i][0], content=ss[i][1], level=ss[i][3], period=ss[i][4], student=ss[i][5], subject=ss[i][6], pre_ready=ss[i][7])

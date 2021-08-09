@@ -5,15 +5,33 @@
   {% csrf_token %}
   <div style = "padding-left:50px; padding-top:50px;">
     <h1>회원정보수정</h1>
-    <hr>
+
     <form action = "{% url 'my_page:update'%}" method = "POST">
       {% csrf_token %}
       아이디: {{user.username}} <br><br>
       이름: {{user.last_name}}{{user.first_name}} <br><br>
       이메일: <input type="email" class="form-control" id="email" name="email" value="{{user.email}}"><br><br>
-
-      <input type = "submit" value = "수정">
-      <a href="{% url 'home' %}" ><div class="col"><button type="button">메인페이지</button></div></a>
+      <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2">수정</a>
+      <a href="{% url 'home' %}" class="btn btn-primary float-right my-4">메인페이지</a>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">수정</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    정보를 수정하시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">수정</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+                </div>
+            </div>
+        </div>
+      </div>
     </form>
   </div>
 

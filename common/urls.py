@@ -15,4 +15,6 @@ urlpatterns = [
     path('find_pw/reset_pw/<int:pk>', views.reset_pw, name='reset_pw'),
     path('find_pw/verify/<int:pk>', views.verify, name='verify'),
     path('lecture/searching/', views.searched_lecture, name='searched_lecture'),
+    path('message/', views.customer_message, name='customer_message'),
+    path('subscribe/', views.subscribe, name='subscribe'),
 ]

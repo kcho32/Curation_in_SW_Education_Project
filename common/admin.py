@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as UserBaseAdmin
-from .models import CustomUser
+from .models import CustomUser, CustomerMessage, NewsAgreedCustomer
 from .forms import UserCreationForm
 
 
@@ -18,3 +18,6 @@ class UserAdmin(UserBaseAdmin):
 
 
 admin.site.register(CustomUser, UserAdmin)
+admin.site.register(CustomerMessage)
+admin.site.register(NewsAgreedCustomer)
+

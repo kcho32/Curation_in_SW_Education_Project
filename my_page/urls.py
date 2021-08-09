@@ -12,4 +12,6 @@ urlpatterns = [
     path('cancel_lecture/<int:id>', views.cancel_lecture, name='cancel_lecture'),
     path('lecture_concern/<int:id>', views.lecture_concern, name='lecture_concern'),
     path('concerned_lecture/', views.concerned_lecture, name='concerned_lecture'),
+    path('my_qna/', views.my_qna, name='my_qna'),
+
 ]

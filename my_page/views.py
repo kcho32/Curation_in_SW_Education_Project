@@ -8,6 +8,7 @@ from django.http import HttpResponseForbidden, HttpResponseRedirect
 from common.models import CustomUser as User
 from lecture.models import Lecture
 from .forms import CustomUserChangeForm, PasswordCheckForm
+from qna.models import Question, Answer, Comment
 
 
 
@@ -22,6 +23,10 @@ def my_page(request):
         full_name = first_name+last_name
         lectures = Lecture.objects.filter(member=user)
         concerned_lectures = Lecture.objects.filter(lecture_concern=user)
+        my_questions = Question.objects.filter(author_id=user)
+        my_answers = Answer.objects.filter(author_id=user)
+        my_comments = Comment.objects.filter(author_id=user)
+
         context = {
             'username': user,
             'first_name': first_name,
@@ -29,6 +34,10 @@ def my_page(request):
             'full_name': full_name,
             'lectures': lectures,
             'concerned_lectures': concerned_lectures,
+            'my_questions': my_questions,
+            'my_answers': my_answers,
+            'my_comments': my_comments,
+
 
         }
 
@@ -47,7 +56,7 @@ def update(request):
             return redirect('home')
     else:
         form = CustomUserChangeForm(instance=request.user)
-        context= {'form': form}
+        context = {'form': form}
     return render(request, 'my_page/update.html', context)
 
 
@@ -74,6 +83,7 @@ def join_lecture(request, id):
         lecture.save()
     return render(request, 'my_page/join_lecture.html')
 
+
 #수강취소
 @login_required
 def cancel_lecture(request, id):
@@ -81,6 +91,7 @@ def cancel_lecture(request, id):
     lecture = Lecture.objects.get(pk=id)
     lecture.member.remove(user)
     return render(request, 'my_page/cancel_lecture.html')
+
 
 #관심등록강의
 def concerned_lecture(request):
@@ -90,6 +101,7 @@ def concerned_lecture(request):
     return render(request, 'my_page/concerned_lecture.html', {'concerned_lectures': concerned_lectures})
 
 
+#관심등록
 @login_required
 @require_POST
 def lecture_concern(request, id):
@@ -107,6 +119,22 @@ def lecture_concern(request, id):
         lecture.save()
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+
+#질문
+def my_qna(request):
+    user = request.user
+    my_questions = Question.objects.filter(author_id=user)
+    my_answers = Answer.objects.filter(author_id=user)
+    my_comments = Comment.objects.filter(author_id=user)
+    context = {
+        'my_questions' : my_questions,
+        'my_answers' : my_answers,
+        'my_comments' : my_comments,
+    }
+
+
+    return render(request, 'my_page/my_qna.html', context)
 
 
 

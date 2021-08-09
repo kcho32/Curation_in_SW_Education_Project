@@ -50,12 +50,12 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Our Newsletter</h4>
                     <p>Get free technical information from IT professionals every week.</p>
-                    <form action="" method="post">
+
+                    <form id="subscribeForm" action="{% url 'common:subscribe' %}" method="post">
+                        {% csrf_token %}
                         <input type="email" name="email"><input type="submit" value="Subscribe">
                     </form>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -72,4 +72,8 @@
             Designed by <a href="https://bootstrapmade.com/">UneducatedSystem</a>
         </div>
     </div>
+
+    <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 </footer><!-- End Footer -->

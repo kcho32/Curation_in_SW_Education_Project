@@ -34,34 +34,49 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+    <!--contact css -->
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{% static 'base/css/animate.css' %}">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="{% static 'base/css/jquery-ui.min.css' %}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{% static 'base/css/meanmenu.min.css' %}">
+    <!-- Font-Awesome css -->b
+    <link rel="stylesheet" href="{% static 'base/css/font-awesome.min.css' %}">
+    <!-- pe-icon-7-stroke css -->
+    <link rel="stylesheet" href="{% static 'base/css/pe-icon-7-stroke.css' %}">
+    <!-- Flaticon css -->
+    <link rel="stylesheet" href="{% static 'base/css/flaticon.css' %}">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="{% static 'base/venobox/venobox.css' %}" type="text/css" media="screen" />
+    <!-- nivo slider css -->
+    <link rel="stylesheet" href="{% static 'base/lib/css/nivo-slider.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'base/lib/css/preview.css' %}" type="text/css" media="screen" />
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="{% static 'base/css/owl.carousel.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'base/style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'base/css/responsive.css' %}">
+    <!-- modernizr css -->
+    <script src="{% static 'base/js/vendor/modernizr-2.8.3.min.js' %}"></script>
 </head>
 
 <body>
 
 <!-- ======= Header ======= -->
-
-<header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
-
-        <div class="logo">
-            <h1 class="text-light"><a href="index.html"><span>UneducatedSystem</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
-
-
-
-
-    </div>
-</header><!-- End Header -->
-
+{% include 'navbar.html' %}
 
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container" data-aos="fade-up">
         <h1>Curation in SW Education</h1>
         <h2>What we curate is more important than what we learn</h2>
-        <a href="/#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+
+        <a href="#about" class="btn-get-started"><i class="bx bx-chevrons-down"></i></a>
+
     </div>
 </section><!-- End Hero -->
 
@@ -109,20 +124,17 @@
                     </div><!-- End .content-->
                 </div>
             </div>
-
         </div>
     </section><!-- End About Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
-
             <div class="text-center">
                 <h3>Call To SW Education</h3>
                 <p> Do you want to become a SW expert in a short time? Meet free coding programs selected by the SW Education Curator every day!</p>
                 <a class="cta-btn" href="/lecture/">Explore</a>
             </div>
-
         </div>
     </section><!-- End Cta Section -->
 
@@ -168,9 +180,7 @@
                         <p class="description">Get the best training with AI automatic search technology and customized optimization for free</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section><!-- End Services Section -->
 
@@ -188,10 +198,10 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up">
-                        <div class="pic"><img src="{% static 'images/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{% static 'images/team/kimkun.png' %}" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Kim Kun Woo</h4>
-                            <span>CEO</span>
+                            <h4>Kim Keon Woo</h4>
+                            <span>Developer</span>
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -204,10 +214,10 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up" data-aos-delay="150">
-                        <div class="pic"><img src="{% static 'images/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{% static 'images/team/chang.png' %}" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Chang Yunjin</h4>
-                            <span>CDO</span>
+                            <h4>Chang Yun Jin</h4>
+                            <span>Designer</span>
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -220,10 +230,10 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="pic"><img src="{% static 'images/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{% static 'images/team/cho.png' %}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>Cho Kyu Won</h4>
-                            <span>CTO</span>
+                            <span>Developer</span>
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -236,10 +246,10 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="pic"><img src="{% static 'images/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{% static 'images/team/sung.png' %}" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Sung Jae Yoon</h4>
-                            <span>CISO</span>
+                            <h4>Sung Jae Yun</h4>
+                            <span>Developer</span>
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -252,10 +262,10 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="pic"><img src="{% static 'images/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{% static 'images/team/kimmyung.png' %}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>Kim Myung Chan</h4>
-                            <span>CIO</span>
+                            <span>Developer</span>
                             <div class="social">
                                 <a href=""><i class="bi bi-twitter"></i></a>
                                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -275,97 +285,118 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
-        <div class="container" data-aos="fade-up">
-
             <div class="section-title" >
-                <h2 style="color:#5d9bb5">Contact</h2>
-                <p style="color:#b5b5b8">For those who want to receive new software training information every day, or for business partnership or advertising inquiries, please contact below.</ptext-white>
+                <h2 style="color:#088A85">Contact</h2>
             </div>
+                <div id="map" style="width: 100%; height: 445px;"></div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68872f2c22daa56457ef3993c047bd66&libraries=services"></script>
+                <script>
+                    let mapContainer = document.getElementById('map');
+                    let mapOption = {
+                        center: new kakao.maps.LatLng(37.503959655762,127.04273986816),
+                        level: 5
+                    };
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="info-box mb-4">
-                        <i class="bx bx-map"></i>
-                        <h3>Our Address</h3>
-                        <p>서울 강남구 언주로 508 서울상록빌딩 10층~17층 (멀티캠퍼스 본사)</p>
-                    </div>
-                </div>
+                    let map = new kakao.maps.Map(mapContainer, mapOption);
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="info-box  mb-4">
-                        <i class="bx bx-envelope"></i>
-                        <h3>Email Us</h3>
-                        <p>contact@UneduSystem.com</p>
-                    </div>
-                </div>
+                    // 마커가 표시될 위치입니다
+                    var markerPosition  = new kakao.maps.LatLng(37.503959655762,127.04273986816);
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="info-box  mb-4">
-                        <i class="bx bx-phone-call"></i>
-                        <h3>Call Us</h3>
-                        <p>+82 2 511 1100</p>
-                    </div>
-                </div>
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
 
-            </div>
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
 
-            <div class="row">
+                </script>
+		<!-- Map Area End -->
+		<!-- Address Information Area Start -->
+		<div class="address-info-area section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="address-single">
+							<div class="all-adress-info">
+								<div class="icon">
+									<span><i class="fa fa-map-marker"></i></span>
+								</div>
+								<div class="info">
+									<h3>ADDRESS</h3>
+									<p>Mhilara Street 205,</p>
+									<p>Roitan city, USA.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                <div class="col-lg-6 ">
-                    <div id="map" style="width: 100%; height: 384px;"></div>
-                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68872f2c22daa56457ef3993c047bd66&libraries=services"></script>
-                    <script>
-                        let mapContainer = document.getElementById('map');
-                        let mapOption = {
-                            center: new kakao.maps.LatLng(37.503959655762,127.04273986816),
-                            level: 5
-                        };
+					<div class="col-md-4 col-sm-6">
+						<div class="address-single no-margin">
+							<div class="all-adress-info">
+								<div class="icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="info">
+									<h3>E-MAIL</h3>
+									<p>info123@gmail.com</p>
+									<p>www.companyweb.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                        let map = new kakao.maps.Map(mapContainer, mapOption);
-
-                        // 마커가 표시될 위치입니다
-                        var markerPosition  = new kakao.maps.LatLng(37.503959655762,127.04273986816);
-
-                        // 마커를 생성합니다
-                        var marker = new kakao.maps.Marker({
-                            position: markerPosition
-                        });
-
-                        // 마커가 지도 위에 표시되도록 설정합니다
-                        marker.setMap(map);
-
-                    </script>
-                </div>
-
-
-                <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
-                </div>
-
-            </div>
-
-        </div>
+                    <div class="col-md-4 hidden-sm">
+						<div class="address-single">
+							<div class="all-adress-info">
+								<div class="icon">
+									<span><i class="fa fa-user-plus"></i></span>
+								</div>
+								<div class="info">
+									<h3>PHONE</h3>
+									<p>+(02)-12345-6789-55</p>
+									<p>+(05)-15689-5698-44</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Address Information Area End -->
+		<!-- Contact Form Area Start -->
+		<div class="contact-form-area">
+			<div class="container">
+				<div class="about-title">
+					<h3 style="color:#088A85">LEAVE A MESSAGE</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<form action="{% url 'common:customer_message' %}" method="post" class="messageForm">
+                            {% csrf_token %}
+							<div class="row">
+								<div class="col-md-5">
+									<div class="contact-form-left">
+										<input type="text" name="subject" id="subject" placeholder="Subject">
+                                        <input type="text" name="name" id="name" placeholder="Name">
+										<input type="email" name="email" id="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="contact-form-right">
+										<div class="input-message">
+											<textarea name="message" id="message" placeholder="Your Message"></textarea>
+											<input type="submit" value="SEND" name="submit" id="submit">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Form Area End -->
     </section><!-- End Contact Section -->
 
 </main><!-- End #main -->

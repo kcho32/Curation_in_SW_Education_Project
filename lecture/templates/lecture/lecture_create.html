@@ -20,24 +20,44 @@
                value="{{ form.class_name.value|default_if_none:'' }}">
     </div>
     <div class="form-group">
-        <label for="subject">과목</label>
-        <input type="text" class="form-control" name="subject" id="subject"
-               value="{{ form.subject.value|default_if_none:'' }}">
-    </div>
-    <div class="form-group">
-        <label for="detail_subject">세부과목</label>
-        <input type="text" class="form-control" name="detail_subject" id="detail_subject"
-               value="{{ form.detail_subject.value|default_if_none:'' }}">
-    </div>
-    <div class="form-group">
         <label for="content">내용</label>
         <textarea class="form-control" name="content"
                   id="content" rows="10">{{ form.content.value|default_if_none:'' }}</textarea>
     </div>
     <div class="form-group">
-        <label for="price">가격</label>
-        <input type="text" class="form-control" name="price" id="price"
-               value="{{ form.price.value|default_if_none:'' }}">
+        <label for="level">난이도</label>
+        <input type="text" class="form-control" name="level" id="level"
+               value="{{ form.level.value|default_if_none:'' }}">
+    </div>
+    <div class="form-group">
+        <label for="period">기간</label>
+        <input type="text" class="form-control" name="period" id="period"
+               value="{{ form.period.value|default_if_none:'' }}">
+    </div>
+    <div class="form-group">
+        <label for="subject">과목</label>
+        <input type="text" class="form-control" name="subject" id="subject"
+               value="{{ form.subject.value|default_if_none:'' }}">
+    </div>
+    <div class="form-group">
+        <label for="pre_ready">사전준비</label>
+        <input type="text" class="form-control" name="pre_ready" id="pre_ready"
+               value="{{ form.pre_ready.value|default_if_none:'' }}">
+    </div>
+    <div class="form-group">
+        <label for="category">카테고리:</label>
+        <select name="category" id="category">
+            <option value="" selected>---------</option>
+            <option value="1">CAREER ADVANCEMENT</option>
+            <option value="2">SCHOOL OF ARTIFICIAL INTELLIGENCE</option>
+            <option value="3">SCHOOL OF AUTONOMOUS SYSTEMS</option>
+            <option value="4">SCHOOL OF BUSINESS</option>
+            <option value="5">SCHOOL OF CLOUD COMPUTING</option>
+            <option value="6">SCHOOL OF CYBERSECURITY</option>
+            <option value="7">SCHOOL OF DATA SCIENCE</option>
+            <option value="8">SCHOOL OF PRODUCT MANAGEMENT</option>
+            <option value="9">SCHOOL OF PROGRAMMING & DEVELOPMENT</option>
+        </select>
     </div>
     <div class="form-group">
         <label for="lecture_image">이미지</label>

@@ -24,6 +24,8 @@
     <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal">강의 삭제</a>
     <a href="/lecture/{{lecture.id}}/update" class="btn btn-primary float-right my-4">강의 수정</a>
     {% endif %}
+    
+    <a href="{% url 'lecture:index' %}" class="btn btn-primary float-right my-4">뒤로</a>
     <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2">수강신청</a>
 
     <form action = "{% url 'my_page:lecture_concern' lecture.id %}" method="post">
@@ -35,10 +37,8 @@
             <button type="submit">관심등록</button>
                 <i class="far fa-heart fa-lg" style="color:#ed4956;"></i>
         {% endif%}
-
     </form>
 
-    <a href="{% url 'lecture:index' %}" class="btn btn-primary float-right my-4">뒤로</a>
 </div>
 <!-- 수강신청 Modal -->
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -60,6 +60,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- 삭제 Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

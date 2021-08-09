@@ -1,33 +1,56 @@
 {% extends 'base.html' %}
 {% block main_area %}
 
+{% load static %}
 
-<section class="" id="concern_lecture">
-    <div class="container">
-      <div class="row">
-        {% for concerned_lecture in concerned_lectures %}
-            <div class="">
-                <div class = "">
-                    <div class="row"><a href="{{ concerned_lecture.get_absolute_url }}"><h2>강좌명:  {{concerned_lecture.class_name}}</h2></a></div>
-                </div>
-            <form action = "{% url 'my_page:lecture_concern' concerned_lecture.id %}" method="post">
-            {% csrf_token %}
-            {% if user in concerned_lecture.all %}
-                <button type="submit" class="btn">관심등록</button>
-                    <i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
-            {% else %}
-                <button type="submit" class="btn">관심해제</button>
-                    <i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
+<link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}" media="screen">
+<div class="col-md-40 col-sm-12 col-xs-10">
+    <div class="wishlist-right-area">
+        <table class="wish-list-table">
+            <thead>
+                <tr>
+                    <th class="class_name">강좌명</th>
+                    <th class="content">내용</th>
+                    <th class="date">수강기간</th>
+                    <th class="lecture_concerned">관심해제</th>
+                </tr>
+            </thead>
+            {% for concerned_lecture in concerned_lectures %}
+            <tbody>
+                <tr>
 
-            {% endif%}
+                    <td class="class_name">
+                        <a href="{{ concerned_lecture.get_absolute_url }}"><h4>{{concerned_lecture.class_name}}</h4></a>
+                    </td>
+                    <td class="content">
+                        <h7>{{concerned_lecture.content}}</h7><br>
 
-            </form>
+                    </td>
+                    <td class="date">
+                        <div class="date-details">
+                            <span>{{concerned_lecture.date}}</span>
+                        </div>
+                    </td>
+                    <td class="lecture_concerned">
+                        <form action = "{% url 'my_page:lecture_concern' concerned_lecture.id %}" method="post">
+                        {% csrf_token %}
+                            {% if user in concerned_lecture.all %}
+                                <button type="submit" class="btn">관심등록</button>
+                                <i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
+                                {% else %}
+                                <button type="submit" class="btn">관심해제</button>
+                                <i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
+                            {% endif%}
+                        </form>
+                    </td>
 
-            </div>
-        {% endfor %}
-      </div>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
     </div>
-</section>
-                <div class="row2"><a href="{% url 'lecture:index' %}"><div class="col"><button type="button">강의목록보러가기</button></a></div>
+</div>
+
+<a href="{% url 'lecture:index' %}"><div class="pull-right"><button type="button">강의목록보러가기</button></div></a>
 
 {% endblock %}

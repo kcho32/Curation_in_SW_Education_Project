@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+
 {% block main_area %}
-<style>
-    span{
-        font-weight: bold;
-        font-size:22px;
-    }
-</style>
+<!--<style>-->
+<!--    span{-->
+<!--        font-weight: bold;-->
+<!--        font-size:22px;-->
+<!--    }-->
+<!--</style>-->
 <script>
     function search(){
         let searchValue = document.getElementById('searching').value.trim();
@@ -34,7 +35,7 @@
 				{% include "form_errors.html" %}
                 결과내 재검색<br>
                 <input type="hidden" id="term_list" name="term_list" value="{{term_list}}">
-                <input type="text" id="sub_term" name="sub_term">
+                <input type="text" id="sub_term" name="sub_term" style="width:100%; max-width:180px"><br>
                 <button type="submit">검색</button>
             </form>
 
@@ -52,7 +53,7 @@
                         <div class="card-body">
                             <p class="card-text"> {{ l.class_name }}</p>
                             <div class="d-flex justify-content-between align-items-right">
-                                <small class="text-muted">{{ l.price }}원</small>
+                                <small class="text-muted">{{ l.student }}</small>
                             </div>
                         </div>
                     </div>

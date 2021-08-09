@@ -4,12 +4,14 @@ from django.views.generic.base import TemplateView
 from typing import Any, Dict
 from .forms import UserForm, StaffForm
 from .models import CustomUser as User
+from .models import CustomerMessage, NewsAgreedCustomer
 from django.contrib.auth.forms import PasswordChangeForm
 from django.urls import reverse_lazy
 from lecture.models import Lecture, Category
 from functools import reduce
 from operator import and_
 import ast
+from django.http import HttpResponse, HttpResponseRedirect
 
 
 # Create your views here.
@@ -122,7 +124,7 @@ def searched_lecture(request):
         else:
             term_list = ast.literal_eval(term_list)
         term_list.append(sub_term)
-        term_list = list(set(term_list)) #  중복 단어 삭제
+        term_list = list(set(term_list))  # 중복 단어 삭제
         lecture_list = reduce(and_, (Lecture.objects.filter(class_name__icontains=term)
                                      | Lecture.objects.filter(subject__icontains=term)
                                      | Lecture.objects.filter(detail_subject__icontains=term)
@@ -141,5 +143,23 @@ def searched_lecture(request):
         return render(request, './common/searched_lecture.html', context)
 
 
-def contact_us(request):
-    return render(request, 'contact_us.html')
+def customer_message(request):
+    message = CustomerMessage(
+        name=request.POST['name'],
+        email=request.POST['email'],
+        subject=request.POST['subject'],
+        message=request.POST['message']
+    )
+    message.save()
+    return redirect('/#contact')
+
+
+def subscribe(request):
+    if request.method == "POST":
+        subscribe_email = NewsAgreedCustomer(
+            email=request.POST['email']
+        )
+        subscribe_email.save()
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    else:
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
