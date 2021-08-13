@@ -1,8 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'base_lecture_list.html' %}
+{% block title %}Services - update{% endblock %}
 {% block main_area %}
 <form method="post" class="post-form" enctype="multipart/form-data">
     {% csrf_token %}
-    <!-- 오류표시 Start -->
     {% if form.errors %}
     <div class="alert alert-danger" role="alert">
         {% for field in form %}
@@ -13,7 +13,6 @@
         {% endfor %}
     </div>
     {% endif %}
-    <!-- 오류표시 End -->
     <div class="form-group">
         <label for="class_name">강의명</label>
         <input type="text" class="form-control" name="class_name" id="class_name"
@@ -45,7 +44,7 @@
                value="{{ form.pre_ready.value|default_if_none:'' }}">
     </div>
     <div class="form-group">
-        <label for="category">카테고리:</label>
+        <label for="category">카테고리: </label>
         <select name="category" id="category">
             <option value="" selected>---------</option>
             <option value="1">CAREER ADVANCEMENT</option>
@@ -60,10 +59,10 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="lecture_image">이미지</label>
+        <label for="lecture_image">이미지: </label>
         <input type="file" name="lecture_image" id="lecture_image"
                value="{{ form.lecture_image.value|default_if_none:'' }}">
     </div>
-    <button type="submit" class="btn btn-primary">저장하기</button>
+    <button type="submit" class="btn btn-outline-success float-right">저장하기</button>
 </form>
 {% endblock %}

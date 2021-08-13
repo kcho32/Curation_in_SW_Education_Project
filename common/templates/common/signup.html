@@ -38,12 +38,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/register_main.css' %}">
 
     <!--===============================================================================================-->
-    <script>
-    </script>
-
 </head>
 <body>
-
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
@@ -52,25 +48,22 @@
                 {% include "form_errors.html" %}
                 <span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape" onclick="location.href='/'"></i>
-					</span>
+                </span>
                 <span class="login100-form-title p-b-34 p-t-27">
 						Create Account
-					</span>
+                </span>
                 <div class="form-group">
-
                     <div class="form-group">
                         <div class="form-group">
                             <label for="username">Id</label>
                             <input type="text" class="form-control" name="username" id="username"
                                    value="{{ form.username.value|default_if_none:'' }}">
                         </div>
-
                         <style>
 						body {
 						  color: white;
 						}
-					</style>
-
+					    </style>
                         <div class="form-group">
                             <label for="password1">Password</label>
                             <input type="password" class="form-control" name="password1" id="password1"
@@ -85,20 +78,17 @@
                             <label for="last_name">Last Name</label>
                             <input type="text" class="form-control" name="last_name" id="last_name"
                                    value="{{ form.last_name.value|default_if_none:'' }}">
-
                         </div>
                         <div class="form-group">
                             <label for="first_name">First Name</label>
                             <input type="text" class="form-control" name="first_name" id="first_name"
                                    value="{{ form.first_name.value|default_if_none:'' }}">
                         </div>
-
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control" name="email" id="email"
                                    value="{{ form.email.value|default_if_none:'' }}">
                         </div>
-
                         <div class="form-group">
                             <label for="self_prove">Verify Question</label>
                             <select name="self_prove" class="form-control" id="self_prove" >
@@ -119,7 +109,6 @@
                             <button id="register" class="login100-form-btn"  onclick="registerSuccess();">
                                 Sign Up
                             </button>
-                        </div>
                         </div>
                     </div>
                 </div>

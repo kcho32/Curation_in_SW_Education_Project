@@ -1,149 +1,22 @@
 {% load static %}
-<!-- Sidebar/menu -->
-<!--<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">-->
-<!--  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>-->
-<!--  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>-->
-<!--  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>-->
-<!--  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>-->
-<!--</nav>-->
-
-<!--&lt;!&ndash; Image Header &ndash;&gt;-->
-<!--<div class="w3-display-container w3-animate-opacity">-->
-
-<!--    <img src="{% static 'images/sailboat.jpg' %}" alt="boat" style="width:100%;min-height:350px;max-height:450px;">-->
-<!--    <div class="w3-container w3-display-bottomleft w3-margin-bottom">-->
-
-<!--        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">Learning Management System</button>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; Sidebar on click &ndash;&gt;-->
-<!--<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">-->
-<!--    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close-->
-<!--        <i class="fa fa-remove"></i>-->
-<!--    </a>-->
-<!--    <a href="/" class="w3-bar-item w3-button">Home</a>-->
-<!--    <a href="/lecture/" class="w3-bar-item w3-button">Lecture</a>-->
-<!--    <a href="/qna/" class="w3-bar-item w3-button">Board</a>-->
-<!--    {% if user.is_authenticated %}-->
-<!--    <a href="{% url 'common:logout' %}" class="w3-bar-item w3-button">Log Out</a>-->
-<!--    <a href="{% url 'my_page:my_page' %}" class="w3-bar-item w3-button">My Page</a>-->
-<!--    {% else %}-->
-<!--    <a href="{% url 'common:login' %}" class="w3-bar-item w3-button">Sign In</a>-->
-<!--    <a href="{% url 'common:signup' %}" class="w3-bar-item w3-button">Sign Up</a>-->
-<!--    {% endif %}-->
-<!--</nav>-->
-
-<!--&lt;!&ndash; Navbar &ndash;&gt;-->
-<!--<div class="w3-top w3-bar w3-theme-d2">-->
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
-<!--    <div class="float-left">-->
-<!--        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>-->
-<!--        <a href="/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Uneducated System</a>-->
-<!--        <a href="/lecture/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Lecture</a>-->
-<!--        <a href="/qna/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Board</a>-->
-<!--    </div>-->
-<!--    <div class="float-right">-->
-<!--        <div class="float-left d-inline-flex p-2">-->
-<!--            <form id="search" name="search" action="{% url 'common:searched_lecture' %}" method="get">-->
-<!--                <input type="search" id="searching" name="searching">-->
-<!--                <input type="submit" value="검색">-->
-<!--            </form>-->
-<!--        </div>-->
-<!--        <div class="float-right">-->
-<!--            {% if user.is_authenticated %}-->
-<!--            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="{% url 'common:logout' %}">Log Out</a>-->
-<!--            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="{% url 'my_page:my_page' %}"> My Page</a>-->
-<!--            {% else %}-->
-<!--            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="{% url 'common:login' %}" >Sign In</a>-->
-<!--            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="{% url 'common:signup' %}">Sign Up</a>-->
-<!--            {% endif %}-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; Modal &ndash;&gt;-->
-<!--<div id="id01" class="w3-modal">-->
-<!--    <div class="w3-modal-content w3-card-4 w3-animate-top">-->
-<!--        <header class="w3-container w3-teal w3-display-container">-->
-<!--            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>-->
-<!--            <h4>Oh snap! We just showed you a modal..</h4>-->
-<!--            <h5>Because we can <i class="fa fa-smile-o"></i></h5>-->
-<!--        </header>-->
-<!--        <div class="w3-container">-->
-<!--            <p>Cool huh? Ok, enough teasing around..</p>-->
-<!--            <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>-->
-<!--        </div>-->
-<!--        <footer class="w3-container w3-teal">-->
-<!--            <p>Modal footer</p>-->
-<!--        </footer>-->
-<!--    </div>-->
-<!--</div>-->
-
-
-<!--&lt;!&ndash; Container &ndash;&gt;-->
-<!--<div class="w3-container" style="position:relative">-->
-<!--    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"-->
-<!--       style="position:absolute;top:-28px;right:24px">+</a>-->
-<!--</div>-->
-
-
-<!--&lt;!&ndash; Footer &ndash;&gt;-->
-
-<!--<script>-->
-<!--// Script for side navigation-->
-<!--function w3_open() {-->
-<!--  var x = document.getElementById("mySidebar");-->
-<!--  x.style.width = "300px";-->
-<!--  x.style.paddingTop = "10%";-->
-<!--  x.style.display = "block";-->
-<!--}-->
-
-<!--// Close side navigation-->
-<!--function w3_close() {-->
-<!--  document.getElementById("mySidebar").style.display = "none";-->
-<!--}-->
-<!--</script>-->
 
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
         <div class="logo">
-            <h1 class="text-light"><a href="/"><span>UneducatedSystem</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <h1 class="text-light"><a style="font-size:28px; font-weight:bold;" href="/"><span>UneducatedSystem</span></a></h1>
         </div>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto" href="/lecture/">Lecture</a></li>
-                <li><a class="nav-link scrollto" href="/qna/">Board</a></li>
-
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
-                    </ul>
-                </li>
+                <a class="nav-link " href="/lecture/">Services</a>
+                <a class="nav-link scrollto" href="/qna/">Community</a>
                 {% if user.is_authenticated %}
-                <li><a class="nav-link scrollto" href="{% url 'common:logout' %}">Log Out</a></li>
-                <li><a class="nav-link scrollto" href="{% url 'my_page:my_page' %}">My Page</a></li>
+                <a class="nav-link scrollto" href="{% url 'common:logout' %}">Log Out</a>
+                <a class="nav-link scrollto" href="{% url 'my_page:my_page' %}">My Page</a>
                 {% else %}
-                <li><a class="nav-link scrollto" href="{% url 'common:login' %}">Sign In</a></li>
-                <li><a class="nav-link scrollto" href="{% url 'common:signup' %}">Sign Up</a></li>
+                <a class="nav-link scrollto" href="{% url 'common:login' %}">Sign In</a>
+                <a class="nav-link scrollto" href="{% url 'common:signup' %}">Sign Up</a>
                 {% endif %}
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav>
     </div>
-</header><!-- End Header -->
+</header>

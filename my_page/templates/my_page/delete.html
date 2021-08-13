@@ -1,58 +1,72 @@
 {% extends 'base.html' %}
 {% block main_area %}
+{% load static %}
 
-<form method="POST" novalidate>
-    {% csrf_token %}
-    {{ user.username }} 회원님의 계정이 삭제됩니다
-    <div>
-        <label name="label_password" for="{{ form.password.id_for_label }}">{{ form.password.label }}</label>
-        {{ form.password }}
-        {% if form.password.errors %}
-        <script type="text/javascript">
-            document.getElementsByName('password')[0].setAttribute('class','form-control is-invalid')
-        </script>
-            {% for error in form.password.errors %}
-            <div class="invalid-feedback"></div>
-                {{ error }}
-            {% endfor %}
-        {% endif %}
-    </div>
-    <label>
-        <input type="checkbox" name="ck" onclick="checkDisable(this.form)">
-        <span>확인</span>
-    </label>
-    <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2">탈퇴</a>
-    <a href="{% url 'home' %}"><button type="button">메인페이지</button></a>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">회원탈퇴</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                탈퇴 하시겠습니까?
-            </div>
-            <div class="modal-footer">
-                <button type="submit" name="bt" disabled="true" class="btn btn-success">탈퇴하기</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<div style = "padding-left:200px; padding-top:30px;">
+    <div class="row">
+        <h1 class="text-danger">회원탈퇴</h1>
+        <div class="col-lg-9 mt-0 pl-5">
+            <hr class="mb-4">
+            <div class="row">
+                <form method="POST" novalidate>
+                    {% csrf_token %}
+                    <h5 class="text-danger">{{ user.username }} 회원님의 계정이 삭제됩니다
+                        <div>
+                            <label name="label_password" for="{{ form.password.id_for_label }}">{{ form.password.label }}</label>
+                            {{ form.password }}
+                            {% if form.password.errors %}
+                            <script type="text/javascript">
+                    document.getElementsByName('password')[0].setAttribute('class','form-control is-invalid')
+                </script>
+                            {% for error in form.password.errors %}
+                            <div class="invalid-feedback"></div>
+                            {{ error }}
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    </h5>
+                    <label>
+                        <input type="checkbox" name="ck" onclick="checkDisable(this.form)">
+                        <span>확인</span>
+                    </label>
+                    <div>
+                        <a href="#" class="btn btn-outline-danger float-right my-4" data-toggle="modal" data-target="#exampleModal2">탈퇴</a>
+                        <a href="{% url 'home' %}" class="btn btn-outline-success float-right my-4">메인페이지</a>
+                    </div>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel2">회원탈퇴</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    탈퇴 하시겠습니까?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" name="bt" disabled="true" class="btn btn-success">탈퇴하기</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <script type="text/javascript">
+                    function checkDisable(form) {
+                        if (form.ck.checked == true) {
+                            form.bt.disabled = false;
+                        } else {
+                            form.bt.disabled = true;
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>
-    </div>
-
-</form>
-
-<script type="text/javascript">
-    function checkDisable(form) {
-        if (form.ck.checked == true) {
-            form.bt.disabled = false;
-        } else {
-            form.bt.disabled = true;
-        }
-    }
-</script>
-
+</div>
 {% endblock %}

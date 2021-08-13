@@ -48,34 +48,28 @@
 				{% include "form_errors.html" %}
 				<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape" onclick="location.href='/'"></i>
-					</span>
-
+				</span>
 				<span class="login100-form-title p-b-34 p-t-27">
 						Log in
-					</span>
-
+				</span>
 				<div class="wrap-input100 validate-input" data-validate = "Enter username">
 					<input class="input100" type="text" name="username" placeholder="Username" id="username"
 						   value="{{ form.username.value|default_if_none:'' }}">
 					<span class="focus-input100" data-placeholder="&#xf207;"></span>
 				</div>
-
 				<div class="wrap-input100 validate-input" data-validate="Enter password">
 					<input class="input100" type="password" name="password" placeholder="Password" id="password"
 						   value="{{ form.password.value|default_if_none:'' }}">
 					<span class="focus-input100" data-placeholder="&#xf191;"></span>
 				</div>
-
 				<div class="container-login100-form-btn">
 					<button type="submit" class="login100-form-btn mr-3">
 						Login
-					</button>
-					&nbsp;&nbsp;
+					</button>&nbsp;&nbsp;
 					<button type="button" id="goBack" class="login100-form-btn" onclick="location.href='{% url 'common:signup' %}'">
 						Sign Up
 					</button>
 				</div>
-
 				<div class="text-center p-t-90">
 					<a class="txt1" href='{% url "common:find_id" %}'>
 						Forgot ID?

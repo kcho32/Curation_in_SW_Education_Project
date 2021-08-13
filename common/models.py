@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class CustomUser(AbstractUser):
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     self_prove = models.CharField(max_length=50)
     self_prove_answer = models.CharField(max_length=50)
 

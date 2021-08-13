@@ -1,85 +1,147 @@
-{% extends 'base.html' %}
+{% extends 'base_lecture_list.html' %}
+{% block title %}Services - {{ lecture.class_name }}{% endblock %}
 {% block main_area %}
-<section class="py-5 text-center">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <h6>{{ lecture.subject }} > {{ lecture.detail_subject }}</h6>
-            <h1>{{ lecture.class_name }}</h1>
+
+<section>
+    <div class="single-product-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-7">
+                    <div class="single-product-image-inner">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="one">
+                                <div class="venobox" data-gall="gallery" title="">
+                                    {% if lecture.lecture_image %}
+                                    <img src="{{ lecture.lecture_image.url }}" class="img-fluid rounded-start" alt="..." width="570px" height="550px">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5">
+                    <div class="single-product-details">
+                        <div class="list-pro-rating">
+                            <i class="fa fa-star icolor"></i>
+                            <i class="fa fa-star icolor"></i>
+                            <i class="fa fa-star icolor"></i>
+                            <i class="fa fa-star icolor"></i>
+                            <i class="fa fa-star"></i>
+                            {{lecture.student}}
+                        </div>
+                        <h2>{{ lecture.class_name }}</h2>
+                        <p>{{ lecture.content }}</p>
+                        <hr/>
+                        <div class="single-level">
+                            <span><i class="fas fa-laptop-code m-1"></i>{{ lecture.level }}</span>
+                        </div>
+                        <div class="single-product-categories">
+                            <span><i class="fas fa-clock m-1"></i>{{ lecture.period }}</span>
+                        </div>
+                        <hr/>
+                        <div class="single-product-categories">
+                            <label>Categories:</label>
+                            <span>{{ lecture.category }}</span>
+                        </div>
+                        <div class="single-product-categories">
+                            <label>Pre ready:</label>
+                            <span>{{ lecture.pre_ready }}</span>
+                        </div>
+                        <div class="product-attributes">
+                            <h2>
+                                <a href="#" class="cart-btn btn-default text-dark" data-toggle="modal" data-target="#exampleModal2">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="add-to-wishlist">
+                            <form action = "{% url 'my_page:lecture_concern' lecture.id %}" method="post">
+                                {% csrf_token %}
+                                {% if user in lecture.lecture_concern.all %}
+                                <h6><i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
+                                    <button type="submit" class="btn btn-link text-dark text-decoration-none">CANCEL WISHLIST</button></h6>
+                                {% else %}
+                                <h6><i class="far fa-heart fa-lg" style="color:#ed4956;"></i>
+                                    {% if user.is_authenticated %}
+                                    <button type="submit" class="btn btn-link text-dark text-decoration-none">ADD TO WISHLIST</button></h6>
+                                    {% else %}
+                                    <a href="{% url 'common:login' %}"<button type="button" class="btn btn-link text-dark">ADD TO WISHLIST</button></a>
+                                    {% endif %}
+                                {% endif%}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div><i class="fas fa-tags m-1"></i>{{ lecture.subject }}</div><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="p-details-tab-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper ultrices sapien a sagittis. Pellentesque accumsan aliquet felis, sed fermentum sem consequat quis. Maecenas luctus, lorem id viverra luctus, lectus nisl vulputate ligula, tincidunt ultrices neque nibh et urna. Duis aliquam, erat a rutrum imperdiet, orci ante gravida eros, sed dignissim justo eros eget justo. Vivamus hendrerit nibh nec odio elementum volutpat. Praesent lacinia risus et imperdiet pharetra. Donec eu sapien sed lacus feugiat porttitor. Vivamus et ante sollicitudin, interdum eros luctus, tincidunt turpis. Donec cursus sem vel varius dapibus. Vivamus facilisis tempus lectus id egestas. Nam quis felis vitae nunc porta lacinia. Integer erat dolor, tristique at magna quis, molestie bibendum ligula.<br/><br/>
+                            Cras convallis dui lobortis, egestas nibh et, finibus dui. Nunc eu ante luctus, ornare turpis ac, luctus libero. Integer sollicitudin ut ipsum quis ornare. Etiam accumsan a mi at pharetra. Maecenas rutrum nulla enim, eu bibendum sem bibendum tristique. Sed facilisis id leo et ultrices. Aenean rutrum leo vitae elit vestibulum sagittis. Maecenas luctus massa est, luctus condimentum diam rutrum ac. Nullam et arcu eget velit egestas blandit ut eu tortor. Aenean eleifend, erat vel faucibus finibus, tellus ligula posuere nisl, nec lacinia lorem libero vitae dolor. In eu nisl luctus, euismod libero nec, mattis nibh.<br/><br/>
+                            Donec imperdiet vestibulum sapien, et ullamcorper urna tristique non. Sed vitae mi fringilla, condimentum tortor sed, elementum lorem. Duis ut arcu sagittis, lobortis nulla vel, tempor nisi. Integer a nunc et magna tristique pulvinar. Phasellus a mollis arcu, accumsan blandit tellus. Vestibulum hendrerit laoreet elit, ut molestie tellus mattis vitae. Nunc porta varius varius. Duis elementum vitae urna at molestie. Quisque mollis, enim et bibendum tempus, massa neque tristique lorem, et fringilla libero ex nec lorem. Duis dapibus tellus sed dui egestas, eget ultricies sapien dignissim. Vivamus porta finibus ante sed rutrum. Fusce vitae lobortis enim. Etiam mi massa, accumsan suscipit semper eu, mollis at lacus.<br/><br/>
+                            Mauris feugiat dui nec eros feugiat, non interdum ligula elementum. Suspendisse porta urna ut efficitur egestas. Curabitur a augue semper ex commodo rutrum. Nunc hendrerit eleifend lobortis. Pellentesque ut massa eget lacus posuere scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus et mauris risus. Nullam in sollicitudin leo, vitae mollis erat. Curabitur interdum porta nunc ac volutpat. Pellentesque a diam ac leo facilisis sodales nec et mauris. Ut id metus at urna mattis tempor porta ac nunc.&nbsp;&nbsp;
+                            Pellentesque a volutpat urna. Curabitur non erat eu lectus consectetur porttitor. Quisque ullamcorper nulla in nulla aliquam laoreet. Maecenas maximus risus eu turpis placerat tempor. Ut consectetur eleifend ipsum, quis lobortis erat venenatis et. Quisque vel leo efficitur, dignissim sapien nec, venenatis metus. Pellentesque id laoreet nibh. Etiam eget erat mattis, gravida velit ac, pretium lacus.<br/><br/>
+                            Ut iaculis, urna non tincidunt dapibus, leo sapien molestie ligula, ultricies rutrum sem quam sit amet felis. Cras suscipit diam eu nibh consequat, quis tincidunt odio eleifend. Maecenas a sapien in ipsum placerat suscipit vel eu lectus. Nulla sit amet tristique elit, at dignissim arcu. Nunc consectetur porta diam, vitae posuere nisi pellentesque non. Ut tristique enim sed nisl convallis, a varius tellus pharetra. Pellentesque laoreet aliquam sem, ut posuere tellus volutpat nec. Morbi finibus, urna in vehicula finibus, mi nulla semper nisi, id luctus ante lectus non nisl. Nulla et lorem mauris. Nullam blandit vulputate porttitor. Ut consequat ex non neque congue, a vulputate nisi viverra. Nullam volutpat blandit ex, pharetra ornare tellus consequat non. Praesent augue nisl, sodales quis tincidunt quis, pulvinar ut dolor. Sed ullamcorper, nisi vitae dapibus pulvinar, neque mi mattis ex, nec lobortis justo ligula sit amet sapien. Nunc id aliquet magna. Pellentesque lacinia feugiat vulputate.<br/><br/>
+                            Aenean sit amet ipsum scelerisque, venenatis erat id, eleifend nulla. Nam faucibus magna eget dignissim ullamcorper. In porta iaculis libero. Vestibulum iaculis, nunc feugiat feugiat venenatis, tellus mauris euismod erat, ut pulvinar dui sem a ligula. Pellentesque purus arcu, auctor eu finibus sodales, rhoncus non tellus. Mauris nec eros nec dui feugiat ultricies quis a quam. Phasellus eu erat ultrices, fringilla quam at, pretium dui.<br/><br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-8">
-            <div class="card-body">
+    </div>
+    <div>
+        {% if user.is_staff %}
+        <a href="#" class="btn btn btn-outline-success float-right my-4" data-toggle="modal" data-target="#exampleModal">강의 삭제</a>
+        <a href="/lecture/{{lecture.id}}/update" class="btn btn btn-outline-success float-right my-4">강의 수정</a>
+        {% endif %}
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">수강 신청</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    수강 신청 하시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'my_page:join_lecture' lecture.id %}"><button type="button" class="btn btn-success">신청하기</button></a>
+                    {% else %}
+                    <a href="{% url 'common:login' %}"<button type="button" class="btn btn-success">신청하기</button></a>
+                    {% endif %}
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">게시물 삭제</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    게시물을 정말 삭제하시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    <a role="button" class="btn btn-primary" href="/lecture/{{lecture.id}}/delete">삭제하기</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-<div class="bg-white">
-    {% if lecture.lecture_image %}
-    <img src="{{ lecture.lecture_image.url }}" class="img-fluid rounded-start" alt="...">
-    {% endif %}
-    <h3>{{ lecture.content }}</h3>
-</div>
-<div>
-    {% if user.is_staff %}
-    <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal">강의 삭제</a>
-    <a href="/lecture/{{lecture.id}}/update" class="btn btn-primary float-right my-4">강의 수정</a>
-    {% endif %}
-    
-    <a href="{% url 'lecture:index' %}" class="btn btn-primary float-right my-4">뒤로</a>
-    <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2">수강신청</a>
-
-    <form action = "{% url 'my_page:lecture_concern' lecture.id %}" method="post">
-        {% csrf_token %}
-        {% if user in lecture.lecture_concern.all %}
-            <button type="submit">관심해제</button>
-                <i class="fas fa-heart fa-lg" style="color:#ed4956;"></i>
-            {% else %}
-            <button type="submit">관심등록</button>
-                <i class="far fa-heart fa-lg" style="color:#ed4956;"></i>
-        {% endif%}
-    </form>
-
-</div>
-<!-- 수강신청 Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">수강 신청</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                수강 신청 하시겠습니까?
-            </div>
-            <div class="modal-footer">
-                <a href="{% url 'my_page:join_lecture' lecture.id %}"><button type="button" class="btn btn-success">신청하기</button></a>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- 삭제 Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">게시물 삭제</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                게시물을 정말 삭제하시겠습니까?
-            </div>
-            <div class="modal-footer">
-                <a role="button" class="btn btn-primary" href="/lecture/{{lecture.id}}/delete">삭제하기</a>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}

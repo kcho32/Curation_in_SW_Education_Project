@@ -1,16 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'base_community_list.html' %}
+{% block title %}Community - {{ question.subject }}{% endblock %}
 {% block main_area %}
-
 {% load static %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
 <div class="container my-3">
     <!-- 사용자오류 표시 -->
     {% if messages %}
     <div class="alert alert-danger my-3" role="alert">
-    {% for message in messages %}
+        {% for message in messages %}
         <strong>{{ message.tags }}</strong>
         <ul><li>{{ message.message }}</li></ul>
-    {% endfor %}
+        {% endfor %}
     </div>
     {% endif %}
     <h2 class="border-bottom py-2">{{ question.subject }}</h2>
@@ -22,79 +23,79 @@
         </div>
         <div class="col-11"> <!-- 질문영역 -->
             <!-- 기존내용 -->
-    <div class="card">
-        <div class="card-body">
-            <div class="card-text" style="white-space: pre-line;">{{ question.content }}</div>
-            <div class="d-flex justify-content-end">
-                {% if question.modify_date %}
-                <div class="badge badge-light p-2 text-left mx-3">
-                    <div class="mb-2">modified at</div>
-                    <div>{{ question.modify_date }}</div>
-                </div>
-                {% endif %}
-                <div class="badge badge-light p-2 text-left">
-                    <div class="mb-2">{{ question.author.username }}</div>
-                    <div>{{ question.create_date }}</div>
-                </div>
-            </div>
-            {% if request.user == question.author %}
-            <div class="my-3">
-                <a href="{% url 'qna:question_modify' question.id  %}"
-                   class="btn btn-sm btn-outline-secondary">수정</a>
-                <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2">삭제</a>
-
-                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel2">질문 삭제</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text" style="white-space: pre-line;">{{ question.content }}</div>
+                    <div class="d-flex justify-content-end text-dark">
+                        {% if question.modify_date %}
+                        <div class="badge badge-light p-2 text-left mx-3 text-dark">
+                            <div class="mb-2">modified at</div>
+                            <div>{{ question.modify_date }}</div>
                         </div>
-                        <div class="modal-body">
-                            질문을 삭제하시겠습니까?
-                        </div>
-                        <div class="modal-footer">
-                            <a href="{% url 'qna:question_delete' question.id %}" class="delete btn btn-sm btn-outline-secondary"
-                   data-uri="{% url 'qna:question_delete' question.id  %}"><button type="button" class="btn btn-success">신청하기</button></a>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+                        {% endif %}
+                        <div class="badge badge-light p-2 text-left text-dark">
+                            <div class="mb-2 ">{{ question.author.username }}</div>
+                            <div>{{ question.create_date }}</div>
                         </div>
                     </div>
-                </div>
-                </div>
-            {% endif %}
-            </div>
+                    {% if request.user == question.author %}
+                    <div class="my-3">
+                        <a href="#" class="btn btn-outline-success float-right my-4" data-toggle="modal" data-target="#exampleModal2">삭제</a>
+                        <a href="{% url 'qna:question_modify' question.id  %}"
+                           class="btn btn-outline-success float-right my-4" >수정</a>
 
-        <!-- 질문 댓글 Start -->
-        {% if question.comment_set.count > 0 %}
-        <div class="mt-3">
-        {% for comment in question.comment_set.all %}  <!-- 등록한 댓글을 출력 -->
-            <a name="comment_{{ comment.id }}"></a>
-        <div class="comment py-2 text-muted">  <!-- 댓글 각각에 comment 스타일 지정 -->
-            <span style="white-space: pre-line;">{{ comment.content }}</span>
-            <span>
-                - {{ comment.author }}, {{ comment.create_date }}
-                {% if comment.modify_date %}
-                (수정:{{ comment.modify_date }})
-                {% endif %}
-            </span>
-            {% if request.user == comment.author %}
-            <a href="{% url 'qna:comment_modify_question' comment.id  %}" class="small">수정</a>,
-            <a href="{% url 'qna:comment_delete_question' comment.id  %}" class="small delete"
-               data-uri="{% url 'qna:comment_delete_question' comment.id  %}">삭제</a>
-            {% endif %}
-        </div>
-    {% endfor %}
-    </div>
-    {% endif %}
-    <div>
-        <a href="{% url 'qna:comment_create_question' question.id  %}"
-           class="small"><small>댓글 추가 ..</small></a>  <!-- 댓글 추가 링크 -->
-    </div>
-    <!-- 질문 댓글 End -->
-        </div>
-    </div>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel2">질문 삭제</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        질문을 삭제하시겠습니까?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="{% url 'qna:question_delete' question.id %}" class="delete btn btn-sm btn-outline"
+                                           data-uri="{% url 'qna:question_delete' question.id  %}"><button type="button" class="btn btn-outline-success">삭제</button></a>
+                                        <button type="button" class="btn btn-outline-success" data-dismiss="modal">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <!-- 질문 댓글 Start -->
+                    {% if question.comment_set.count > 0 %}
+                    <div class="mt-3">
+                        {% for comment in question.comment_set.all %}  <!-- 등록한 댓글을 출력 -->
+                        <a name="comment_{{ comment.id }}"></a>
+                        <div class="comment py-2 text-muted">  <!-- 댓글 각각에 comment 스타일 지정 -->
+                            <span style="white-space: pre-line;">{{ comment.content }}</span>
+                            <span>
+                               - {{ comment.author }}, {{ comment.create_date }}
+                                {% if comment.modify_date %}
+                                (수정:{{ comment.modify_date }})
+                                {% endif %}
+                            </span>
+                            {% if request.user == comment.author %}
+                            <a href="{% url 'qna:comment_modify_question' comment.id  %}" class="small text-dark">수정</a>
+                            <a href="{% url 'qna:comment_delete_question' comment.id  %}" class="small delete text-dark"
+                               data-uri="{% url 'qna:comment_delete_question' comment.id  %}">삭제</a>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <div>
+                        <a href="{% url 'qna:comment_create_question' question.id  %}"
+                           class="small text-dark" ><small>댓글 추가 ..</small></a>  <!-- 댓글 추가 링크 -->
+                    </div>
+                    <!-- 질문 댓글 End -->
+                </div>
+            </div>
         </div>
     </div>
     <h5 class="border-bottom my-3 py-2">{{question.answer_set.count}}개의 답변이 있습니다.</h5>
@@ -104,60 +105,60 @@
         <div class="col-1">  <!-- 추천영역 -->
             <div class="bg-light text-center p-3 border font-weight-bolder mb-1">{{answer.voter.count}}</div>
             <a href="{% url 'qna:vote_answer' answer.id  %}" data-uri="{% url 'qna:vote_answer' answer.id  %}"
-            class="recommend btn btn-sm btn-secondary btn-block my-1">추천</a>
+               class="recommend btn btn-sm btn-secondary btn-block my-1">추천</a>
         </div>
         <div class="col-11">  <!-- 답변영역 -->
-        <!-- 기존내용 -->
-    <div class="card">
-        <div class="card-body">
-            <div class="card-text" style="white-space: pre-line;">{{ answer.content }}</div>
-            <div class="d-flex justify-content-end">
-                {% if answer.modify_date %}
-                <div class="badge badge-light p-2 text-left mx-3">
-                    <div class="mb-2">modified at</div>
-                    <div>{{ answer.modify_date }}</div>
-                </div>
-                {% endif %}
-                <div class="badge badge-light p-2 text-left">
-                    <div class="mb-2">{{ answer.author.username }}</div>
-                    <div>{{ answer.create_date }}</div>
-                </div>
-            </div>
-            {% if request.user == answer.author %}
-            <div class="my-3">
-                <a href="{% url 'qna:answer_modify' answer.id  %}"
-                   class="btn btn-sm btn-outline-secondary">수정</a>
-                <a href="{% url 'qna:answer_delete' answer.id  %}" class="delete btn btn-sm btn-outline-secondary "
-                   data-uri="{% url 'qna:answer_delete' answer.id  %}">삭제</a>
-            </div>
-            {% endif %}
-            {% if answer.comment_set.count > 0 %}
-            <div class="mt-3">
-            {% for comment in answer.comment_set.all %}
-                <a name="comment_{{ comment.id }}"></a>
-                <div class="comment py-2 text-muted">
-                    <span style="white-space: pre-line;">{{ comment.content }}</span>
-                    <span>
+            <!-- 기존내용 -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text" style="white-space: pre-line;">{{ answer.content }}</div>
+                    <div class="d-flex justify-content-end text-dark">
+                        {% if answer.modify_date %}
+                        <div class="badge badge-light p-2 text-left mx-3 text-dark">
+                            <div class="mb-2">modified at</div>
+                            <div>{{ answer.modify_date }}</div>
+                        </div>
+                        {% endif %}
+                        <div class="badge badge-light p-2 text-left text-dark">
+                            <div class="mb-2 ">{{ answer.author.username }}</div>
+                            <div>{{ answer.create_date }}</div>
+                        </div>
+                    </div>
+                    {% if request.user == answer.author %}
+                    <div class="my-3">
+                        <a href="{% url 'qna:answer_delete' answer.id  %}" class="delete btn btn-outline-success float-right my-4 "
+                           data-uri="{% url 'qna:answer_delete' answer.id  %}">삭제</a>
+                        <a href="{% url 'qna:answer_modify' answer.id  %}"
+                           class="btn btn-outline-success float-right my-4">수정</a>
+                    </div>
+                    {% endif %}
+                    {% if answer.comment_set.count > 0 %}
+                    <div class="mt-3">
+                        {% for comment in answer.comment_set.all %}
+                        <a name="comment_{{ comment.id }}"></a>
+                        <div class="comment py-2 text-muted text-dark">
+                            <span style="white-space: pre-line;">{{ comment.content }}</span>
+                            <span>
                         - {{ comment.author }}, {{ comment.create_date }}
                         {% if comment.modify_date %}
                         (수정:{{ comment.modify_date }})
                         {% endif %}
                     </span>
-                    {% if request.user == comment.author %}
-                    <a href="{% url 'qna:comment_modify_answer' comment.id  %}" class="small">수정</a>,
-                    <a href="{% url 'qna:comment_delete_answer' comment.id  %}" class="small delete"
-                       data-uri="{% url 'qna:comment_delete_answer' comment.id  %}">삭제</a>
+                            {% if request.user == comment.author %}
+                            <a href="{% url 'qna:comment_modify_answer' comment.id  %}" class="small text-dark">수정</a>
+                            <a href="{% url 'qna:comment_delete_answer' comment.id  %}" class="small delete text-dark"
+                               data-uri="{% url 'qna:comment_delete_answer' comment.id  %}">삭제</a>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
                     {% endif %}
+                    <div>
+                        <a href="{% url 'qna:comment_create_answer' answer.id  %}"
+                           class="small text-dark"><small>댓글 추가 ..</small></a>
+                    </div>
                 </div>
-            {% endfor %}
             </div>
-            {% endif %}
-            <div>
-                <a href="{% url 'qna:comment_create_answer' answer.id  %}"
-                   class="small"><small>댓글 추가 ..</small></a>
-            </div>
-        </div>
-    </div>
         </div>
     </div>
     {% endfor %}
@@ -165,9 +166,9 @@
         {% csrf_token %}
         <div class="form-group">
             <textarea {% if not user.is_authenticated %}disabled{% endif %}
-              name="content" id="content" class="form-control" rows="10"></textarea>
+                      name="content" id="content" class="form-control" rows="10"></textarea>
         </div>
-        <input type="submit" value="답변등록" class="btn btn-primary">
+        <input type="submit" value="답변 등록" class="btn btn-outline-success float-right">
     </form>
 </div>
 

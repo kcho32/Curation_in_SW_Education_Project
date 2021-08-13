@@ -1,16 +1,18 @@
-{% extends 'base.html' %}
-
+{% extends 'base_community_list.html' %}
+{% block title %}Community - form {% endblock %}
 {% block main_area %}
+
 <div class="container my-3">
     <form method="post" class="post-form">
         {% csrf_token %}
         {% include "form_errors.html" %}
         <div class="form-group">
             <label for="content">답변내용</label>
-            <textarea class="form-control" name="content" id="content" 
+            <textarea class="form-control" name="content" id="content"
                       rows="10">{{ form.content.value|default_if_none:'' }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">저장하기</button>
+        <button type="submit" class="btn btn-outline-success float-right">저장하기</button>
     </form>
 </div>
+
 {% endblock %}

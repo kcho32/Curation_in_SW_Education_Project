@@ -1,50 +1,60 @@
-<!DOCTYPE html>
-{% extends 'base.html' %}
-
-{% block title %}
-searching
-{% endblock %}
-
-
+{% extends 'base_lecture_list.html' %}
 {% block main_area %}
-<style>
-    span{
-        font-weight: bold;
-        font-size:22px;
-    }
-</style>
-<script>
-    function search(){
-        let searchValue = document.getElementById('searching').value.trim();
-        if(searchValue.length > 1){
-            location.href="/lecture/search" + searchValue + "/";
-        }
-        else{
-            alert('검색어(' + searchValue + ')가 너무 짧습니다.');
-        }
-    };
 
+<script>
+function search(){
+    let searchValue = document.getElementById('searching').value.trim();
+    if(searchValue.length > 1){
+        location.href="/lecture/search" + searchValue + "/";
+    }
+    else{
+        alert('검색어(' + searchValue + ')가 너무 짧습니다.');
+    }
+};
 </script>
 <div class="row">
-    <!-- Sidebar-->
-    <div class="border-end col-md-3 col-lg-2" id="sidebar-wrapper">
-        <div class="list-group" id="categories-card">
-            <div class="sidebar-heading border-bottom bg-light">전체 강의</div>
-            <a href="/lecture/">전체</a>
-            {% for c in categories %}
-            <a href="{{ c.get_absolute_url }}">{{ c }}</a>
-            {% endfor %}
-            <a href="/lecture/category/no_category">미분류</a>
-        </div>
-        <div>
-            <form id="rescan" name="rescan" action="{% url 'common:searched_lecture' %}" method="post">
-                {% csrf_token %}
-				{% include "form_errors.html" %}
-                결과내 재검색<br>
-                <input type="hidden" id="term_list" name="term_list" value="{{term_list}}">
-                <input type="text" id="sub_term" name="sub_term" style="width:100%; max-width:180px">
-                <button type="submit">검색</button>
-            </form>
+    <div class="col-md-3 col-lg-2" id="sidebar-wrapper">
+        <div class="shop-widget" id="categories-card">
+            <aside class="widget widget-categories">
+                <ul class="list-group">
+                    <li class="list-group-item bg-light">
+                        <h2 class="sidebar-title text-center">
+                        Category
+                        </h2>
+                    </li>
+                    <li class="list-group-item bg-light">
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="/lecture/">
+                            전체
+                        </a>
+                    </li>
+                    {% for c in categories %}
+                    <li class="list-group-item bg-light">
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="{{ c.get_absolute_url }}">
+                            {{ c }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                    <li class="list-group-item bg-light">
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="/lecture/category/no_category">미분류</a>
+                    </li>
+                    <li class="list-group-item bg-light">
+                        <form id="rescan" name="rescan" action="{% url 'common:searched_lecture' %}" method="post">
+                            {% csrf_token %}
+                            {% include "form_errors.html" %}
+                            세부 검색<br>
+                            <input type="hidden" id="term_list" name="term_list" value="{{term_list}}">
+                            <input type="text" id="sub_term" name="sub_term" style="width:100%; max-width:180px"><br>
+                            <div class="widget-buttom">
+                                <input type="submit" value="검색">
+                                <a href="/lecture">검색어 리셋</a>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </aside>
         </div>
     </div>
     <div class="album py-5 col-md-9 col-lg-10" id="main_area">
@@ -59,7 +69,8 @@ searching
                         <div class="card-body">
                             <p class="card-text"> {{ l.class_name }}</p>
                             <div class="d-flex justify-content-between align-items-right">
-                                <small class="text-muted">{{ l.price }}원</small>
+                                <small class="text-muted">{{ l.student }}</small>
+                                <small class="text-muted float-right">{{ l.level }} </small>
                             </div>
                         </div>
                     </div>
@@ -69,13 +80,13 @@ searching
         </div>
     </div>
 </div>
+{% if user.is_staff %}
+<a href="{% url 'lecture:lecture_create' %}" class="btn btn-primary float-right">강의 등록</a>
+{% endif %}
 <div class="pagination justify-content-center">
-    <!--    {% if page_obj.has_previous %}-->
-    <!--    <a class="listbutton" href="?page=1"><button type="button" class="btn btn-dark">첫 번째 페이지</button></a>&nbsp&nbsp&nbsp-->
-    <!--    {%endif%}-->
-    <!--    {% if page_obj.has_previous %}-->
-    <!--    <a href="?page={{page_obj.previous_page_number}}"><button type="button" class="btn btn-dark">이전</button></a>&nbsp&nbsp&nbsp-->
-    <!--    {%endif%}-->
+    {% if page_obj.has_previous %}
+    <a class="listbutton" href="?page=1"><button type="button" class="btn btn-dark">이전</button></a>&nbsp&nbsp&nbsp
+    {%endif%}
     {% for page_number in page_obj.paginator.page_range %}
     {% if page_number >= page_obj.number|add:-5 and page_number <= page_obj.number|add:5 %}
     {% if page_number == page_obj.number %}
@@ -89,14 +100,8 @@ searching
     {% endif %}
     {% endif %}
     {% endfor %}
-    <!--    {% if page_obj.has_next %}-->
-    <!--    <a href="?page={{page_obj.next_page_number}}"><button type="button" class="btn btn-dark">다음</button></a>&nbsp&nbsp&nbsp-->
-    <!--    {%endif%}-->
-    <!--    {% if page_obj.has_next %}-->
-    <!--    <a class="listbutton" href="?page={{page_obj.paginator.num_pages}}"><button type="button" class="btn btn-dark">마지막 페이지</button></a>-->
-    <!--    {%endif%}-->
+    {% if page_obj.has_next %}
+    <a class="listbutton" href="?page={{page_obj.paginator.num_pages}}"><button type="button" class="btn btn-dark">다음</button></a>
+    {%endif%}
 </div>
-{% if user.is_staff %}
-<a href="{% url 'lecture:lecture_create' %}" class="btn btn-primary float-right my-4">강의 등록</a>
-{% endif %}
 {% endblock %}

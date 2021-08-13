@@ -127,7 +127,7 @@ def searched_lecture(request):
         term_list = list(set(term_list))  # 중복 단어 삭제
         lecture_list = reduce(and_, (Lecture.objects.filter(class_name__icontains=term)
                                      | Lecture.objects.filter(subject__icontains=term)
-                                     | Lecture.objects.filter(detail_subject__icontains=term)
+                                     | Lecture.objects.filter(level__icontains=term)
                                      | Lecture.objects.filter(content__icontains=term) for term in term_list))
         context = {'lecture_list': lecture_list, 'term_list': term_list, 'categories': categories}
         return render(request, './common/searched_lecture.html', context)
@@ -137,7 +137,7 @@ def searched_lecture(request):
         print(term_list, type(term_list))
         lecture_list = reduce(and_, (Lecture.objects.filter(class_name__icontains=term)
                                      | Lecture.objects.filter(subject__icontains=term)
-                                     | Lecture.objects.filter(detail_subject__icontains=term)
+                                     | Lecture.objects.filter(level__icontains=term)
                                      | Lecture.objects.filter(content__icontains=term) for term in term_list))
         context = {'lecture_list': lecture_list, 'term_list': term_list, 'categories': categories}
         return render(request, './common/searched_lecture.html', context)

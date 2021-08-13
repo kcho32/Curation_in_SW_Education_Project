@@ -9,12 +9,11 @@ class Question(models.Model):
     modify_date = models.DateTimeField(null=True, blank=True)
     voter = models.ManyToManyField(CustomUser, related_name='voter_question')  # 추천인 추가
 
+    def get_absolute_url(self):
+        return f'/qna/{self.pk}/'
 
     def __str__(self):
         return self.subject
-
-    def get_absolute_url(self):
-        return f'/qna/{self.pk}/'
 
 
 class Answer(models.Model):
@@ -28,9 +27,6 @@ class Answer(models.Model):
     def get_absolute_url(self):
         return f'/qna/{self.pk}/'
 
-
-
-
 class Comment(models.Model):
     author = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     content = models.TextField()
@@ -41,4 +37,3 @@ class Comment(models.Model):
 
     def get_absolute_url(self):
         return f'/qna/{self.pk}/'
-

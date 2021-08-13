@@ -38,70 +38,66 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/login_main.css' %}">
 
     <!--===============================================================================================-->
+    <script>
+    function closeModal(modalId) {
+        alert(modalId}
+        $('#{{modalId}}').modal('close');
+    };
+    </script>
 </head>
 <body>
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-
             {% if error_message %}
             {{error_message}}
-
             {% else %}
-            <script>
-                function pwValid() {
-                    password1 = document.getElementById("password1").value
-                    password2 = document.getElementById("password2").value
-                    form = document.getElementById("newPasswordForm")
-                    if (password1 === password2) {
-                        if (password1.length < 8) {
-                            alert('비밀번호가 8자리 미만입니다');
-                        } else {
-                            alert("변경 완료")
-                            return form.submit();
-                        }
-                    } else {
-                        alert("두 번호가 일치하지 않습니다.")
-                      }
-                }
-            </script>
-
             <form name="newPasswordForm" id="newPasswordForm" action="{% url 'common:reset_pw' pk %}" method='post'>
                 {% csrf_token %}
                 {% include "form_errors.html" %}
                 <span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape" onclick="location.href='/'"></i>
-					</span>
-
+                </span>
                 <span class="login100-form-title p-b-34 p-t-27">
 						Find PW
-					</span>
-
+                </span>
                 <div class="wrap-input100 validate-input" data-validate = "Username">
                     <p class="input100">Username: {{ username }}</p>
                 </div>
-
                 <div class="wrap-input100 validate-input" data-validate = "Enter Email">
                     <p class="input100">email: {{ email }}</p>
                 </div>
-
                 <div id="password_input">
                     <div class="wrap-input100 validate-input" data-validate = "Enter Change Password">
                         <input class="input100" type="password" name="password1" placeholder="Change Password" id="password1"
                                value="{{ form.password1.value|default_if_none:'' }}">
                         <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
-
                     <div class="wrap-input100 validate-input" data-validate = "Enter Change Password">
                         <input class="input100" type="password" name="password2" placeholder="Check Change Password" id="password2"
                                value="{{ form.password2.value|default_if_none:'' }}">
                         <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
-
                 </div>
+                <script>
+                function pwValid() {
+                    password1 = document.getElementById("password1").value
+                    password2 = document.getElementById("password2").value
+                    form = document.getElementById("newPasswordForm")
+                    if (password1 === password2) {
+                        if (password1.length < 8) {
+                            $('#shortPasswordModal').modal('show');
+                        } else {
+                            $('#successModal').modal('show');
+                        }
+                    } else {
+                        $('#differentPasswordModal').modal('show');
+                      }
+                };
+                </script>
                 <div class="container-login100-form-btn">
-                    <button type="submit" onclick="pwValid()"; class="login100-form-btn mr-3">
-                    Change
+                    <button type="button" onclick="pwValid();" class="login100-form-btn mr-3">
+                        Change
                     </button>
                 </div>
             </form>
@@ -109,7 +105,66 @@
         </div>
     </div>
 </div>
-
+<div class="modal" id="differentPasswordModal" tabindex="-1" role="dialog" aria-labelledby="differentPasswordModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="differentPasswordModalLabel">변경 실패</h5>
+            </div>
+            <div class="modal-body">
+                비밀번호가 일치하지 않습니다.
+            </div>
+            <script>
+            function closeDifferentPasswordModal() {
+                $('#differentPasswordModal').modal('hide');
+            };
+            </script>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeDifferentPasswordModal();">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="shortPasswordModal" tabindex="-1" role="dialog" aria-labelledby="shortPasswordModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shortPasswordModalLabel">변경 실패</h5>
+            </div>
+            <div class="modal-body">
+                비밀번호는 8자리 이상이여야 합니다.
+            </div>
+            <script>
+            function closeShortPasswordModal() {
+                $('#shortPasswordModal').modal('hide');
+            };
+            </script>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeShortPasswordModal()">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">변경 완료</h5>
+            </div>
+            <script>
+            function closeSuccessModal() {
+                document.newPasswordForm.submit();
+            };
+            </script>
+            <div class="modal-body">
+                비밀번호를 변경하였습니다.
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary" onclick="closeSuccessModal()">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="dropDownSelect1"></div>
 

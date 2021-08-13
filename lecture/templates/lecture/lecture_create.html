@@ -1,4 +1,5 @@
-{% extends 'base.html' %}
+{% extends 'base_lecture_list.html' %}
+{% block title %}Services - create{% endblock %}
 {% block main_area %}
 <form method="post" class="post-form" enctype="multipart/form-data">
     {% csrf_token %}
@@ -45,7 +46,7 @@
                value="{{ form.pre_ready.value|default_if_none:'' }}">
     </div>
     <div class="form-group">
-        <label for="category">카테고리:</label>
+        <label for="category">카테고리: </label>
         <select name="category" id="category">
             <option value="" selected>---------</option>
             <option value="1">CAREER ADVANCEMENT</option>
@@ -60,10 +61,10 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="lecture_image">이미지</label>
+        <label for="lecture_image">이미지: </label>
         <input type="file" name="lecture_image" id="lecture_image"
                value="{{ form.lecture_image.value|default_if_none:'' }}">
     </div>
-    <button type="submit" class="btn btn-primary">저장하기</button>
+    <button type="submit" class="btn btn-outline-success float-right">저장하기</button>
 </form>
 {% endblock %}

@@ -1,50 +1,50 @@
 {% extends 'base.html' %}
+{% block title %}My Page - Lecture{% endblock %}
 {% block main_area %}
+{% load static %}
 
-
+<link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}" media="screen">
+<h1>수강강의목록</h1>
 <section class="" id="my_lecture">
-    <div class="container">
-      <div class="row2">
+    <div class="row">
         {% for lecture in lectures %}
-            <div class="">
-
-                    <div class="row"><a href="{{ lecture.get_absolute_url }}"> <h2>강좌명:  {{lecture.class_name}}</h2></a></div>
-                    <div class="row">과목: {{lecture.subject}}</div>
-                    <div class="row">세부과목: {{lecture.detail_subject}}</div>
-                    <div class="row">수강기간: {{lecture.date}}</div>
-                    <div class="row">내용: {{lecture.content}}</div>
-
-            </div>
-
-            <div class="row">
-              <a href="#" class="btn btn-primary float-right my-4" data-toggle="modal" data-target="#exampleModal2" style="width:100%; max-width:180px"
->수강취소</a>
-                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel2">수강 취소</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            수강취소를 하시겠습니까?
-                        </div>
-                        <div class="modal-footer">
-                            <a href="{% url 'my_page:cancel_lecture' lecture.id %}"><button type="button" class="btn btn-success">취소</button></a>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">뒤로가기</button>
-                        </div>
+        {% if lecture.lecture_image %}
+        <figure class="col-2 my_lecture"><img src="{{ lecture.lecture_image.url}}" class="img-fluid rounded-start" alt="..." width="350px" height="350px"></figure>
+        {% endif %}
+        <div class="col-4 mt-4">
+            <div class="row2 "><a href="{{ lecture.get_absolute_url }}" class="text-success"> <h3>강좌명:  {{lecture.class_name}}</h3></a></div>
+            <div class="row2 ">과목: {{lecture.subject}}</div>
+            <div class="row2 ">레벨: {{lecture.level}}</div>
+            <div class="row2 ">수강기간: {{lecture.period}}</div>
+            <div class="row2 ">필요이수과목: {{lecture.pre_ready}}</div>
+        </div>
+        <div class="row">
+            <a href="#" class="btn btn-outline-success float-right my-4 ml-3" data-toggle="modal" data-target="#exampleModal2" style="width:80%; max-width:100px">수강취소</a>
+        </div>
+        <hr class="mb-4">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">수강 취소</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        수강취소를 하시겠습니까?
+                    </div>
+                    <div class="modal-footer">
+                        <a href="{% url 'my_page:cancel_lecture' lecture.id %}"><button type="button" class="btn btn-success">취소</button></a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">뒤로가기</button>
                     </div>
                 </div>
-                </div>
-
+            </div>
+        </div>
         {% endfor %}
-      </div>
     </div>
 </section>
-                <div class="row2"><a href="{% url 'lecture:index' %}"><div class="col"><button type="button">강의목록보러가기</button></div></a></div>
-
+<a href="{% url 'lecture:index' %}"><button type="button" class="btn btn-outline-success">강의목록보러가기</button></a>
 
 {% endblock %}
 

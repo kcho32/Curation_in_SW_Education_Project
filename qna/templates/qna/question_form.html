@@ -1,20 +1,21 @@
-{% extends 'base.html' %}
-
+{% extends 'base_community_list.html' %}
+{% block title %}Community - form {% endblock %}
 {% block main_area %}
+
 <div class="container">
     <h5 class="my-3 border-bottom pb-2">질문등록</h5>
     <form method="post" class="post-form my-3" >
         {% csrf_token %}
         <!-- 오류표시 Start -->
         {% if form.errors %}
-            <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger" role="alert">
             {% for field in form %}
-                {% if field.errors %}
-                <strong>{{ field.label }}</strong>
-                {{ field.errors }}
-                {% endif %}
+            {% if field.errors %}
+            <strong>{{ field.label }}</strong>
+            {{ field.errors }}
+            {% endif %}
             {% endfor %}
-            </div>
+        </div>
         {% endif %}
         <!-- 오류표시 End -->
         <div class="form-group">
@@ -27,7 +28,8 @@
             <textarea class="form-control" name="content"
                       id="content" rows="10">{{ form.content.value|default_if_none:'' }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">저장하기</button>
+        <button type="submit" class="btn btn-outline-success float-right">저장하기</button>
     </form>
 </div>
+
 {% endblock %}

@@ -1,0 +1,5228 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "teacher",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "student",
+        "permissions": []
+    }
+},
+{
+    "model": "common.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$EvDxZzxiA0s64FMY0V7T3c$htKZ5xOVefikpw0flyOXNIrN1v7Ex7lCkxSVP9/8LG4=",
+        "last_login": "2021-08-11T15:47:57.645",
+        "is_superuser": true,
+        "username": "user",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-08-09T09:25:39.267",
+        "email": "paranmax@naver.com",
+        "self_prove": "",
+        "self_prove_answer": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "common.newsagreedcustomer",
+    "pk": 1,
+    "fields": {
+        "email": "paranmax@naver.com"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 1,
+    "fields": {
+        "class_name": "CAREER ADVANCEMENT",
+        "slug": "career-advancement"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 2,
+    "fields": {
+        "class_name": "SCHOOL OF ARTIFICIAL INTELLIGENCE",
+        "slug": "school-of-artificial-intelligence"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 3,
+    "fields": {
+        "class_name": "SCHOOL OF AUTONOMOUS SYSTEMS",
+        "slug": "school-of-autonomous-systems"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 4,
+    "fields": {
+        "class_name": "SCHOOL OF BUSINESS",
+        "slug": "school-of-business"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 5,
+    "fields": {
+        "class_name": "SCHOOL OF CLOUD COMPUTING",
+        "slug": "school-of-cloud-computing"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 6,
+    "fields": {
+        "class_name": "SCHOOL OF CYBERSECURITY",
+        "slug": "school-of-cybersecurity"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 7,
+    "fields": {
+        "class_name": "SCHOOL OF DATA SCIENCE",
+        "slug": "school-of-data-science"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 8,
+    "fields": {
+        "class_name": "SCHOOL OF PRODUCT MANAGEMENT",
+        "slug": "school-of-product-management"
+    }
+},
+{
+    "model": "lecture.category",
+    "pk": 9,
+    "fields": {
+        "class_name": "SCHOOL OF PROGRAMMING & DEVELOPMENT",
+        "slug": "school-of-programming-development"
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1067,
+    "fields": {
+        "class_name": "AI for Healthcare",
+        "content": "Be at the forefront of the revolution of AI in Healthcare, and transform patient outcomes. Enable enhanced medical decision-making powered by machine learning to build the treatments of the future.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "124 Reviews",
+        "subject": "Artificial Intelligence, 2D Medical Imaging, 3D Medical Imaging, Electronic Health Record Data, Deep Learning, Wearable Device Data, Supervised Learning",
+        "pre_ready": "Intermediate Python, and Experience with Machine Learning",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1068,
+    "fields": {
+        "class_name": "Artificial Intelligence",
+        "content": "Learn essential Artificial Intelligence concepts from AI experts like Peter Norvig and Sebastian Thrun, including search, optimization, planning, pattern recognition, and more.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "317 Reviews",
+        "subject": "AI Algorithms, Search Algorithms, Optimization, Planning, Pattern Recognition",
+        "pre_ready": "Algebra, Calculus, Statistics, & Python",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1069,
+    "fields": {
+        "class_name": "Artificial Intelligence for Robotics",
+        "content": "Learn how to program all the major systems of a robotic car. Topics include planning, search, localization, tracking, and control.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Probabilistic Models, Kalman Filters, Motion Planning, Robot Control, Simultaneous Localization & Mapping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1070,
+    "fields": {
+        "class_name": "Computer Vision",
+        "content": "Learn the computer vision skills behind advances in robotics and automation. Write programs to analyze images, implement feature extraction, and recognize objects using deep learning models.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "714 Reviews",
+        "subject": "Convolutional Neural Networks, Recurrent Neural Networks, Simultaneous Localization and Mapping, Object Tracking, Image Classification, Deep Learning",
+        "pre_ready": "Python, Statistics, Machine Learning, & Deep Learning",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1071,
+    "fields": {
+        "class_name": "Deep Reinforcement Learning",
+        "content": "Master the deep reinforcement learning skills that are powering amazing advances in AI. Then start applying these to applications like video games and robotics.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "457 Reviews",
+        "subject": "Reinforcement Learning, Neural Networks, PyTorch, Deep Q-Networks (DQN), Deep Deterministic Policy Gradients (DDPG)",
+        "pre_ready": "Experience with Python, Probability, Machine Learning, & Deep Learning.",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1072,
+    "fields": {
+        "class_name": "Intel?Edge AI for IoT Developers",
+        "content": "Lead the development of cutting-edge Edge AI applications that are the future of the Internet of Things. Leverage the Intel?Distribution of OpenVINO?Toolkit to fast-track development of high-performance computer vision and deep learning inference applications.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "237 Reviews",
+        "subject": "Edge AI, Computer Vision, Deep Learning, Edge Computing, AI Modeling, Deep Neural Networks (DNN), Convolutional Neural Networks (CNN), IoT, Intel?Distribution of OpenVINO?Toolkit, Intel?DevCloud for the Edge",
+        "pre_ready": "Intermediate Python, and Experience with Deep Learning, Command Line, and OpenCV",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1073,
+    "fields": {
+        "class_name": "Knowledge-Based AI: Cognitive Systems",
+        "content": "The twin goals of knowledge-based artificial intelligence (AI) are to build AI agents capable of human-level intelligence and gain insights into human cognition.",
+        "level": "Advanced",
+        "period": "7 Weeks",
+        "student": "None",
+        "subject": "Semantic Networks, Common-Sense Reasoning, Logic & Planning, Analogical Reasoning, Visuospatial Reasoning",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1074,
+    "fields": {
+        "class_name": "Machine Learning DevOps Engineer",
+        "content": "In this program,you will build theDevOps skills required to automate the various aspects and stages of machine learning model building and monitoring.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "API development, Automated model scoring, CI/CD, Model testing, Data Version Control, Machine Learning Pipelines",
+        "pre_ready": "Prior experience with Python and Machine Learning",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1075,
+    "fields": {
+        "class_name": "Model Building and Validation",
+        "content": "This course will teach you how to start from scratch in understanding and paying attention to what is important in the data and how to answer questions about data.",
+        "level": "Advanced",
+        "period": "8 Weeks",
+        "student": "None",
+        "subject": "Questioning, Modeling, Validation, Data Analysis, QMV Process",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1076,
+    "fields": {
+        "class_name": "Natural Language Processing",
+        "content": "Learn the skills to get computers to understand, process, and respond to human language. Build models on real data, and get hands-on experience with sentiment analysis, machine translation, and more.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "465 Reviews",
+        "subject": "Machine Learning, Speech Recognition, Sentiment Analysis, Machine Translation, Part of Speech Tagging",
+        "pre_ready": "Python, Statistics, Machine Learning, & Deep Learning",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1077,
+    "fields": {
+        "class_name": "Secure and Private AI",
+        "content": "Learn how to extend PyTorch with the tools necessary to train AI models that preserve user privacy.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1078,
+    "fields": {
+        "class_name": "Cyber-Physical Systems Design & Analysis",
+        "content": "This course provides an introduction to cyber-physical systems with an industrial perspective.",
+        "level": "Advanced",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1079,
+    "fields": {
+        "class_name": "Flying Car and Autonomous Flight Engineer",
+        "content": "Master job-ready autonomous flight software engineering skills as you tackle advanced challenges, write real code for real aircraft, and develop a systems understanding of the Flying Car full-stack.",
+        "level": "Advanced",
+        "period": "6 Months",
+        "student": "235 Reviews",
+        "subject": "3D Motion Planning, Controls, Estimation, Kalman Filters",
+        "pre_ready": "Mathematics & Programming",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1080,
+    "fields": {
+        "class_name": "Robotics Software Engineer",
+        "content": "Build five hands-on projects to acquire core robotics software engineering skills: ROS, Gazebo, Localization, Mapping, SLAM, Navigation, and Path Planning.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "513 Reviews",
+        "subject": "C++, ROS, Localization, Mapping, SLAM, Navigation, Path Planning, Robot Operating System, Robotics",
+        "pre_ready": "Mathematics & Programming",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1081,
+    "fields": {
+        "class_name": "Self Driving Car Engineer",
+        "content": "In this program, you will learn the techniques that power self-driving cars across the full stack of a vehicle뭩 autonomous capabilities. Using Deep Learning with radar and lidar sensor fusion, you will train the vehicle to detect and identify its surroundings to inform navigation.",
+        "level": "Advanced",
+        "period": "5 Months",
+        "student": "None",
+        "subject": "Computer Vision, Deep Learning, Sensor Fusion, Localization, Self-Driving Cars, Path Planning and Control",
+        "pre_ready": "Python, C++, Linear Algebra and Calculus",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1082,
+    "fields": {
+        "class_name": "Sensor Fusion Engineer",
+        "content": "Learn to fuse lidar point clouds, radar signatures, and camera images using Kalman Filters to perceive the environment and detect and track vehicles and pedestrians over time.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "264 Reviews",
+        "subject": "Perception, Lidar, Radar, Sensors, Computer Vision",
+        "pre_ready": "Intermediate C++, Calculus, and Probability",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1083,
+    "fields": {
+        "class_name": "AWS Cloud Architect",
+        "content": "Lead your organization's cloud computing strategy as an AWS Cloud Architect. Plan, design, and build secure, high availability cloud infrastructure.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "187 Reviews",
+        "subject": "Cloud Infrastructure, Cloud Security, AWS, CloudFormation, High Availability Infrastructure, Serverless Computing",
+        "pre_ready": "Experience with Cloud Computing, Programming, and AWS",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1084,
+    "fields": {
+        "class_name": "Ethical Hacker",
+        "content": "Master the skills necessary to become a successful Ethical Hacker. Learn how to find and exploit vulnerabilities and weaknesses in various systems, design and execute a penetration testing plan, and report on test findings using valid evidence.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Vulnerability Management, Penetration Testing, Reconnaissance, Social Engineering, Open-source intelligence, System and Application Auditing",
+        "pre_ready": "Linux, Networking, Programming and Window OS",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1085,
+    "fields": {
+        "class_name": "Data Architect",
+        "content": "Learn how to plan, design and implement enterprise data infrastructure solutions and create the blueprints for your organization뭩 data success.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "63 Reviews",
+        "subject": "Entity relationship diagrams, Relational Data Design, Online Analytical Processing, Operational Data Stores, Data Lake Architecture, Data Governance",
+        "pre_ready": "Intermediate Python, SQL, and Basics of ETL/Data Pipelines",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1086,
+    "fields": {
+        "class_name": "Data Scientist",
+        "content": "Build effective machine learning models, run data pipelines, build recommendation systems, and deploy solutions to the cloud with industry-aligned projects.",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "986 Reviews",
+        "subject": "Machine Learning, Deep Learning, Software Engineering",
+        "pre_ready": "Python, SQL & Statistics",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1087,
+    "fields": {
+        "class_name": "Data Streaming",
+        "content": "Learn how to stream data to unlock key insights in real-time.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "197 Reviews",
+        "subject": "Data Streaming, Spark, Kafka, Kafka Streaming, Spark Streaming",
+        "pre_ready": "Intermediate Python, SQL, and experience with ETL",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1088,
+    "fields": {
+        "class_name": "Advanced Android App Development",
+        "content": "Make your app production-ready by applying advanced features like library integration, material design, widgets, receiving cloud messages, and more!",
+        "level": "Advanced",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Android Development, Fragments, Libraries, Firebase, Espresso",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1089,
+    "fields": {
+        "class_name": "Advanced Operating Systems",
+        "content": "",
+        "level": "Advanced",
+        "period": "5 Weeks",
+        "student": "None",
+        "subject": "Operating System Kernels, Virtualization, Distributed Systems, Cloud Computing, Real-Time Operating Systems",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1090,
+    "fields": {
+        "class_name": "Android Performance",
+        "content": "Performance matters to users, so it must matter to you. Learn how to identify and fix bottlenecks in your Android applications, and ensure a smooth user experience.",
+        "level": "Advanced",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Android Development, Performance, Optimization",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1091,
+    "fields": {
+        "class_name": "Applied Cryptography",
+        "content": "Cryptography is present in everyday life, from paying with a credit card to using the telephone. Learn all about making and breaking puzzles in computing.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Cryptography, Ciphers, Encryption",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1092,
+    "fields": {
+        "class_name": "Browser Rendering Optimization",
+        "content": "This course will demystify the browser's rendering pipeline and make it easy for you to build high performance web apps.",
+        "level": "Advanced",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Browser Rendering Response, Animation, Idle and Load (RAIL), Optimizing JavaScript, How to debug an app",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1093,
+    "fields": {
+        "class_name": "Client-Server Communication",
+        "content": "Learn how a client communicates with a server, including HTTP's request and response cycle, HTTP/2 and HTTPs.",
+        "level": "Advanced",
+        "period": "5 Weeks",
+        "student": "None",
+        "subject": "HTTP request and response cycle, HTTP headers and verbs, HTTP/1 and HTTP/2 capabilities, HTTPS, Client-Server Communication",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1094,
+    "fields": {
+        "class_name": "Computability, Complexity & Algorithms",
+        "content": "Learn tools and techniques that will help you recognize when problems you encounter are intractable and when there an efficient solution.",
+        "level": "Advanced",
+        "period": "",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1095,
+    "fields": {
+        "class_name": "Design of Computer Programs",
+        "content": "Learn how to model problems, and how to optimize performance by using some of the advanced features of Python.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Computer Program Design, Python, Design Process",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1096,
+    "fields": {
+        "class_name": "ES6 - JavaScript Improved",
+        "content": "Learn about the changes made to the JavaScript programming language in ECMAScript 6 and how to use these new improvements to write better cleaner code.",
+        "level": "Advanced",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "JavaScript, ES6, Syntax, Functions",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1097,
+    "fields": {
+        "class_name": "Front End Frameworks",
+        "content": "Explore and build interactive, single-page applications with popular JavaScript frameworks!",
+        "level": "Advanced",
+        "period": "8 Weeks",
+        "student": "None",
+        "subject": "Single Page Applications, Building Angular apps, Building Ember apps, Underscore's template function, Backbone events and routing",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1098,
+    "fields": {
+        "class_name": "Gradle for Android and Java",
+        "content": "Build bigger and better Android and Java apps using the Gradle build tool.",
+        "level": "Advanced",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Android Development, Gradle, Java",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1099,
+    "fields": {
+        "class_name": "High Performance Computer Architecture",
+        "content": "The HPCA course covers performance measurement, pipelining, and improved parallelism through various means.",
+        "level": "Advanced",
+        "period": "",
+        "student": "None",
+        "subject": "Processor Pipelining, Branch Prediction, Instruction Scheduling, Memory Ordering, Multiprocessor Architectures",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1100,
+    "fields": {
+        "class_name": "High Performance Computing",
+        "content": "This course will give you solid foundations for developing, analyzing, and implementing parallel and locality-efficient algorithms. Offered at Georgia Tech as CS6220",
+        "level": "Advanced",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Shared Memory Models, Parallel Algorithms, Distributed Memory Models, Message Passing Interfaces, Hierarchical Memory Models",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1101,
+    "fields": {
+        "class_name": "How to Make an iOS App",
+        "content": "Learn the process of building an app, taking your ideas from drawing board to App Store!",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "iOS, Ideation and Research, UI, App Store",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1102,
+    "fields": {
+        "class_name": "Intro to DevOps",
+        "content": "Learn all about the DevOps landscape, workflow, and a survey of the systems currently being used to support scalable software deployment.",
+        "level": "Advanced",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "DevOps, CAMS principles, Continuous Integration, Delivery workflows",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1103,
+    "fields": {
+        "class_name": "Introduction to Graduate Algorithms",
+        "content": "Learn advanced techniques for designing algorithms and apply them to hard computational problems.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1104,
+    "fields": {
+        "class_name": "iOS Networking with Swift",
+        "content": "Learn how to incorporate networking into your apps to access data from around the world. Build the On the Map app to share location and fun links with fellow students.",
+        "level": "Advanced",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Networking, URLSession, JSON Parsing",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1105,
+    "fields": {
+        "class_name": "iOS Persistence and Core Data",
+        "content": "Persisting data is a core skill for any iOS developer. Learn how to store app data to your device using three common techniques: NSUserDefaults, Sandbox, and Core Data.",
+        "level": "Advanced",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Data Persistence, Core Data, UserDefaults, FileManager",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1106,
+    "fields": {
+        "class_name": "JavaScript Design Patterns",
+        "content": "Learn the importance of code organization and how to implement it with either vanilla JavaScript or an organizational library or framework.",
+        "level": "Advanced",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Separating concerns, Code organization, Using an Organizational Library, KnockoutJS",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1107,
+    "fields": {
+        "class_name": "JavaScript Promises",
+        "content": "Learn how to simplify asynchronous work with Native JavaScript Promises!",
+        "level": "Advanced",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Native JavaScript Promises, Asynchronous code, Advanced error handling, Generating sequences of async work",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1108,
+    "fields": {
+        "class_name": "Kotlin for Android Developers",
+        "content": "Take an Android app in Java and convert it to Kotlin, learning key features of the Kotlin programming language along the way.",
+        "level": "Advanced",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Kotlin, Android",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1109,
+    "fields": {
+        "class_name": "Web Accessibility",
+        "content": "Get hands-on experience making web applications accessible. You뭠l understand when and why users need accessibility, then you뭠l dive into how to implement.",
+        "level": "Advanced",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Accessibility, Screen Readers, Focus, Semantics, ARIA",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1110,
+    "fields": {
+        "class_name": "Xcode Debugging",
+        "content": "In this course, you'll learn standard methodologies for debugging software, and how to use Xcode's debugging tools to find and squash bugs.",
+        "level": "Advanced",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Debugging, LLDB",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1111,
+    "fields": {
+        "class_name": "Craft Your Cover Letter",
+        "content": "Write a compelling narrative that showcases your value to the company.",
+        "level": "Beginner",
+        "period": "1 Day",
+        "student": "None",
+        "subject": "Creating a narrative, Targeting your pitch, Communicating value, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1112,
+    "fields": {
+        "class_name": "Refresh Your Resume",
+        "content": "Create a targeted resume that gets the attention of recruiters and lands you an interview in tech.",
+        "level": "Beginner",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "Resume writing, Company targeting, Storytelling, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1113,
+    "fields": {
+        "class_name": "Strengthen Your LinkedIn Network & Brand",
+        "content": "Learn how to excel at networking both in-person and on LinkedIn.",
+        "level": "Beginner",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Personal branding, LinkedIn, Networking, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1114,
+    "fields": {
+        "class_name": "AI Fundamentals",
+        "content": "AI Fundamentals is an entry point into the world of AI using Microsoft's cloud-based solutions, such as Azure Machine Learning and Azure Cognitive Services.",
+        "level": "Beginner",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Artificial Intelligence, Machine Learning, Azure, Computer Vision, Azure Cognitive Services, Natural Language Processing, Conversational AI",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1115,
+    "fields": {
+        "class_name": "AI Programming with Python",
+        "content": "Learn Python, NumPy, Pandas, Matplotlib, PyTorch, Calculus, and Linear Algebra뾲he foundations for building your own neural network.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "999 Reviews",
+        "subject": "Python, NumPy, Pandas, Matplotlib, PyTorch",
+        "pre_ready": "Basic Algebra and Programming Knowledge",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1116,
+    "fields": {
+        "class_name": "Eigenvectors and Eigenvalues",
+        "content": "Learn how to calculate eigenvalues and eigenvectors and why they are important for AI applications.",
+        "level": "Beginner",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Linear Algebra, Eigenvectors, Eigenvalues",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1117,
+    "fields": {
+        "class_name": "Intro to Descriptive Statistics",
+        "content": "Intro to Descriptive Statistics will teach you the basic concepts of statistics that can be used to extract information from data.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Descriptive Statistics, Estimation, Central Limit Theorem",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1118,
+    "fields": {
+        "class_name": "Self-Driving Fundamentals: Featuring Apollo",
+        "content": "Identify key parts of self-driving cars, utilize Apollo HD Map, localization, perception, prediction, planning and control, and start the learning path of building a self-driving car.",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Apollo HD Map, Localization, Perception, Prediction, Planning, Control",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1119,
+    "fields": {
+        "class_name": "Business Analytics",
+        "content": "Gain foundational data skills applicable to any industry. Collect and analyze data, model business scenarios, and communicate your findings with SQL, Excel, and Tableau.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "1540 Reviews",
+        "subject": "Excel & Spreadsheets, SQL, Data Visualization, Data Dashboards",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1120,
+    "fields": {
+        "class_name": "Creating an Analytical Dataset",
+        "content": "Learn how to prepare data to ensure the efficacy of your analysis while improving fluency in Alteryx.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Data Issues, Data Formatting, Data Blending",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1121,
+    "fields": {
+        "class_name": "Digital Marketing",
+        "content": "Gain real-world experience running live campaigns as you learn from top experts in the field. Launch your career with a 360-degree understanding of digital marketing.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "2079 Reviews",
+        "subject": "Digital Marketing, Social Media Marketing, Facebook Marketing, Search Engine Optimization, Search Engine Marketing, Display Ads, Search Ads",
+        "pre_ready": "No Experience Required.",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1122,
+    "fields": {
+        "class_name": "Managing Remote Teams with Upwork",
+        "content": "Bring your remote-teams to the next level with hands-on skills to manage your remote workforce effectively.",
+        "level": "Beginner",
+        "period": "1 Hour",
+        "student": "None",
+        "subject": "Team Management, Workforce Training, Business Strategy, Agile Management, Remote Work",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1123,
+    "fields": {
+        "class_name": "Marketing Analytics",
+        "content": "Gain foundational data skills applicable to marketing. Collect and analyze data, model marketing scenarios, and communicate your findings with Excel, Tableau, Google Analytics, and Data Studios.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "316 Reviews",
+        "subject": "Google Analytics, Excel & Spreadsheets, Data Visualization, Customer Segmentation",
+        "pre_ready": "No Prerequisites",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1124,
+    "fields": {
+        "class_name": "Predictive Analytics For Business",
+        "content": "Predictive analytics is the practice of determining patterns from data to predict future outcomes and trends. Across industries, it enables high-value solutions to important business problems.",
+        "level": "Beginner",
+        "period": "160 Hours",
+        "student": "463 Reviews",
+        "subject": "Data Wrangling, Classification, A/B Testing, Forecasting, Segmentation",
+        "pre_ready": "Algebra, Descriptive Statistics, and Excel",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1125,
+    "fields": {
+        "class_name": "Problem Solving with Advanced Analytics",
+        "content": "Learn a scientific approach to solving problems with data, a foundational skill for anyone interested in making data driven decisions in a business context.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Linear Regression",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1126,
+    "fields": {
+        "class_name": "Intro to Cloud Computing",
+        "content": "This free course will equip you with the foundational skills you need to pursue a career in cloud computing. The course covers fundamental cloud computing principles and features hands-on practice using AWS, the leading cloud service provider.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Cloud Computing, AWS Console, Compute Services, Serverless Architecture, Cloud Databases",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1127,
+    "fields": {
+        "class_name": "Introduction to Cybersecurity",
+        "content": "Get your start in the high growth field of cybersecurity by building foundational skills in how to evaluate, maintain and monitor the security of computer systems.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "81 Reviews",
+        "subject": "Threat Assessment, Security Vulnerabilities, Compliance, Governance, Risk, Incident Response",
+        "pre_ready": "Basic knowledge of network connectivity and OS fundamentals",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1128,
+    "fields": {
+        "class_name": "Data Analysis and Visualization with Power BI",
+        "content": "You뭠l master the in-demand skills necessary to become a successful data analyst like data pre-processing, visualization and analysis using Power BI as the primary tool.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Power BI, data visulations, data modeling, Extract-Transform-Load, Data Analytics Expressions",
+        "pre_ready": "Microsoft Excel",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1129,
+    "fields": {
+        "class_name": "Data Visualization",
+        "content": "Combine data, visuals, and narrative to tell impactful stories and make data-driven decisions.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "185 Reviews",
+        "subject": "Data Visualization, Tableau, Dashboards, Data Storytelling",
+        "pre_ready": "Basic Data Analysis",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1130,
+    "fields": {
+        "class_name": "Intro to Data Analysis",
+        "content": "Explore a variety of datasets, posing and answering your own questions about each. You'll be using the Python libraries NumPy, Pandas, and Matplotlib.",
+        "level": "Beginner",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Data Analysis, Python, numpy, pandas",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1131,
+    "fields": {
+        "class_name": "Intro to Inferential Statistics",
+        "content": "Intro to Inferential Statistics will teach you how to test your hypotheses and begin to make predictions based on statistical results drawn from data!",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Inferential Statistics, Hypothesis Testing, T-tests, ANOVA",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1132,
+    "fields": {
+        "class_name": "Programming for Data Science with Python",
+        "content": "Learn the fundamental programming tools for data professionals: Python, SQL, the Terminal and Git.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "1011 Reviews",
+        "subject": "Python, Numpy & Pandas, SQL, Git & GitHub",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1133,
+    "fields": {
+        "class_name": "Programming for Data Science with R",
+        "content": "Prepare for a data science career by learning the fundamental data programming tools: R, SQL, command line, and git.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "68 Reviews",
+        "subject": "R, SQL, Git",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1134,
+    "fields": {
+        "class_name": "SQL",
+        "content": "Master SQL, the core language for Big Data analysis, and enable insight-driven decision-making and strategy for your business.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "216 Reviews",
+        "subject": "SQL, PostgreSQL, JOINs, Subqueries, Window Functions, Partitions, Data Cleaning, DDL, DML, Relational and Non-Relational Databases",
+        "pre_ready": "Basic understanding of data types",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1135,
+    "fields": {
+        "class_name": "SQL for Data Analysis",
+        "content": "Learn to use Structured Query Language (SQL) to extract and analyze data stored in databases",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1136,
+    "fields": {
+        "class_name": "Agile Software Development",
+        "content": "The Agile Software Development Nanodegree program equips you with the skills you need to guide the delivery of high value products with top notch software development teams.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "76 Reviews",
+        "subject": "Agile, Scrum, Kanban, XP, Minimum Viable Product",
+        "pre_ready": "No Experience Required",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1137,
+    "fields": {
+        "class_name": "AI Product Manager",
+        "content": "Learn to develop AI products that deliver business value. Build skills that help you compete in the new AI-powered world.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "497 Reviews",
+        "subject": "AI Products, Training ML Models, Annotating Datasets, Prototyping a Product",
+        "pre_ready": "No Experience Required",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1138,
+    "fields": {
+        "class_name": "Product Manager",
+        "content": "Envision and execute the development of industry-defining products, and learn how to successfully bring them to market.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "615 Reviews",
+        "subject": "Product Strategy, Product Design, Product Development, Design Sprint, Product Launch",
+        "pre_ready": "No Experience Required",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1139,
+    "fields": {
+        "class_name": "Product Manager Interview Preparation",
+        "content": "Ace your product management interview by understanding how to answer key strategic, technical, and practical product questions.",
+        "level": "Beginner",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Product Management, Interview Preparation, Career Advancement, Product Strategy, Technical Interview",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1140,
+    "fields": {
+        "class_name": "UX Designer",
+        "content": "Design impactful user experiences for products in today뭩 digital world.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "834 Reviews",
+        "subject": "User Research, User Experience, Prototyping, Interactive Design, User Interface Design, Usability Testing",
+        "pre_ready": "No Experience Required.",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1141,
+    "fields": {
+        "class_name": "Android Basics",
+        "content": "No programming experience? No Problem! Start developing Android apps today.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "3131 Reviews",
+        "subject": "Android Development, Java programming, Android Studio, XML layouts, Android Views",
+        "pre_ready": "No Experience Required.",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1142,
+    "fields": {
+        "class_name": "Android Basics: Data Storage",
+        "content": "In this course, you'll learn the basics of data storage in Android, building your first database and an app that could be used for any small business!",
+        "level": "Beginner",
+        "period": "8 Weeks",
+        "student": "None",
+        "subject": "Android Development, SQLite, ContentProvider, CursorAdapter & CursorLoader, Database, Design",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1143,
+    "fields": {
+        "class_name": "Android Basics: Multiscreen Apps",
+        "content": "Learn to build multiple screens and link them together, expanding the range of apps you can create! You'll also learn how to play audio and add images to your apps.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Android Development, Intents and Activities, Data, Loops and Custom Classes, Images and Visual Polish, Audio and Libraries",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1144,
+    "fields": {
+        "class_name": "Android Basics: Networking",
+        "content": "This class teaches the basics of networking using Android, and is a part of the Android Basics Nanodegree by Google.",
+        "level": "Beginner",
+        "period": "5 Weeks",
+        "student": "None",
+        "subject": "Android Development, JSON Parsing, HTTP Networking, Threads and Parallelism, Control Flow and Conditionals, Preferences",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1145,
+    "fields": {
+        "class_name": "Android Basics: User Input",
+        "content": "Learn how to make your apps interactive using buttons and text! In this course you'll learn the basics of the Java programming language and how to apply them to Android.",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Android Development, Java, Object-Oriented Programming, Conditional Code, Methods, Variables",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1146,
+    "fields": {
+        "class_name": "Android Basics: User Interface",
+        "content": "Learn how to design your first layout in Android! This is the first course in the Android Basics Nanodegree program.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Android Development, Building Layouts, Android Studio, Views and ViewGroups, Styling",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1147,
+    "fields": {
+        "class_name": "Data Visualization in Tableau",
+        "content": "Learn the fundamentals of data visualization and practice communicating with data.",
+        "level": "Beginner",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Tableau, Design of Visualizations, Visual Encodings",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1148,
+    "fields": {
+        "class_name": "Engagement & Monetization | Mobile Games",
+        "content": "You will learn the most effective monetization strategies for your game, how to keep your players interested and engaged, so that your game stands out in the app store.",
+        "level": "Beginner",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Game Development, Monetization, Engagement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1149,
+    "fields": {
+        "class_name": "How to create <anything> in Android",
+        "content": "Learn to implement the newest Android user interface components while building apps in Android Studio.",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Android, UI, App Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1150,
+    "fields": {
+        "class_name": "How to Install Android Studio",
+        "content": "Participate in this short tutorial to install Android Studio on your computer and set up a new project using the program's Project Wizard.",
+        "level": "Beginner",
+        "period": "1 Day",
+        "student": "None",
+        "subject": "Android, Android Studio, Java",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1151,
+    "fields": {
+        "class_name": "HTML5 Canvas",
+        "content": "Learn how you can use HTML5 Canvas to create and modify images or even interactive animations.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "HTML5 Canvas, Canvas2D, Creating animation",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1152,
+    "fields": {
+        "class_name": "Intro to HTML and CSS",
+        "content": "In this course, you'll learn the fundamentals web development, along with best practices and professional problem-solving techniques using Developer Tools.",
+        "level": "Beginner",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "HTML, CSS, CSS Syntax, HTML Syntax Problem Set",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1153,
+    "fields": {
+        "class_name": "Intro to JavaScript",
+        "content": "Learn the fundamentals of JavaScript, the most popular programming language in web development.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "JavaScript, Conditionals, Loops, Data Types & Variables",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1154,
+    "fields": {
+        "class_name": "Intro to Physics",
+        "content": "Go to the places where big physics discoveries were made in the past and make them yourself. You뭠l visit Italy, the Netherlands, and the UK as you learn basic physics.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Kinematics, Dynamics, Trigonometry, Periodic Motion, Electricity",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1155,
+    "fields": {
+        "class_name": "Intro to Point & Click App Development",
+        "content": "In this short class you'll build powerful apps without writing code. Great if you're an aspiring developer or someone who wants to learn what programmers do.",
+        "level": "Beginner",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Salesforce App Development, Schema Building, Data Modeling",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1156,
+    "fields": {
+        "class_name": "Intro to Psychology",
+        "content": "Go on a journey through psychological concepts and principles to enable you to gain a more in-depth understanding of human thought and behavior.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Pyschology, Research Methods, Biology",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1157,
+    "fields": {
+        "class_name": "Intro to Statistics",
+        "content": "Get ready to analyze, visualize, and interpret data! Thought-provoking examples and chances to combine statistics and programming will keep you engaged and challenged.",
+        "level": "Beginner",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Probability, Descriptive Statistics, Inferential Statistics",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1158,
+    "fields": {
+        "class_name": "Introduction to Programming",
+        "content": "Udacity's Intro to Programming is your first step towards careers in Web and App Development, Machine Learning, Data Science, AI, and more! This program is perfect for beginners.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "3400 Reviews",
+        "subject": "Introduction to Programming, HTML, CSS, Python",
+        "pre_ready": "No Coding Experience Needed",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1159,
+    "fields": {
+        "class_name": "Introduction to Python Programming",
+        "content": "In this course, you'll learn the fundamentals of the Python programming language, along with programming best practices. You뭠l learn to represent and store data using Python data types and variables, and use conditionals and loops to control the flow of your programs. You뭠l harness the power of complex data structures like lists, sets, dictionaries, and tuples to store collections of related data. You뭠l define and document your own custom functions, write scripts, and handle errors. Lastly, you뭠l learn to find and use modules in the Python Standard Library and other third-party libraries.",
+        "level": "Beginner",
+        "period": "5 Weeks",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1160,
+    "fields": {
+        "class_name": "Introduction to Virtual Reality",
+        "content": "If you are interested in learning more about virtual reality, this course will teach you the principles of VR technology and help you understand what you can build in VR.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "VR development, Unity, Google VR SDK for Unity, General understanding of how VR works, Deploying to Android and iOS",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1161,
+    "fields": {
+        "class_name": "iOS Developer",
+        "content": "Master the Swift programming language, and create a portfolio of iOS apps for iPhone and iPad to showcase your skills!",
+        "level": "Beginner",
+        "period": "6 Months",
+        "student": "855 Reviews",
+        "subject": "Swift programming, Core Data, UIKit, iOS networking, app publishing, User interfaces, Local Persistence, APIs",
+        "pre_ready": "No prior knowledge required",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1162,
+    "fields": {
+        "class_name": "Java Programming",
+        "content": "This Nanodegree program is intended to elevate your Java abilities and teach you the fundamental skills used by Java developers to design, code, test and deploy cutting-edge Java software. It is ideal for programming beginners with little or no Java experience who want to set themselves up for success as a professional Java developer and deploy functional Java-based applications of their own creation.",
+        "level": "Beginner",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Object-oriented programming, functional programming, I/O, reflection, concurrent programming, Java modules",
+        "pre_ready": "Basic programming concepts like variables, loops and conditionals.",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1163,
+    "fields": {
+        "class_name": "Java Programming Basics",
+        "content": "Take your first steps towards becoming a Java developer! Learn Java syntax and create conditional statements, loops, and functions.",
+        "level": "Beginner",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Java Programming, Java Syntax, Java Functions, Loops",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1164,
+    "fields": {
+        "class_name": "Linux Command Line Basics",
+        "content": "An introduction to the Linux command line interface.",
+        "level": "Beginner",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Command line interface (Linux server), Terminal and Shell (GNU Bash), Linux filesystem, Shell commands",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1165,
+    "fields": {
+        "class_name": "Localization Essentials",
+        "content": "Localization is about making a product feel tailored to users around the world. Specifically, it is the process of adapting a product to a language, culture and market.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Localization, Google Translator Toolkit, Localization at Google",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1166,
+    "fields": {
+        "class_name": "Microsoft Power Platform",
+        "content": "Learn to build powerful and effective solutions with ease with Microsoft Power Platform. Created in partnership with the Microsoft Power Platform team, this course will introduce you to efficient low-code solutions for data analytics, app development, and artifical intelligence.",
+        "level": "Beginner",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Microsoft Power Platform, Power Apps, Power Automate, Azure AI Builder",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1167,
+    "fields": {
+        "class_name": "Networking for Web Developers",
+        "content": "You've used the Internet. Now find out more about how it works.",
+        "level": "Beginner",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "HTTP, Domain Name System, Ping, TCP/IP stack, IP addressing",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1168,
+    "fields": {
+        "class_name": "RPA Developer with UiPath",
+        "content": "Build the operational processes that enable the businesses of the future.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Process Automation, Business Operations, UiPath Studio, UiPath Orchestrator",
+        "pre_ready": "Basic familiarity with Microsoft applications and data manipulation",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1169,
+    "fields": {
+        "class_name": "Statistics",
+        "content": "We live in a time of unprecedented access to information. You'll learn how to use statistics to interpret that information and make decisions.",
+        "level": "Beginner",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Statistical Research Methods, Data Visualization, Distributions, Hypothesis Testing, Regression",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1170,
+    "fields": {
+        "class_name": "Swift for Beginners",
+        "content": "Learn Swift, Apple's programming language for building iOS applications. Start with the basics and work your way towards completing sets of challenges in Swift.",
+        "level": "Beginner",
+        "period": "7 Days",
+        "student": "None",
+        "subject": "Variables and Constants, Strings, Control Flow, Functions",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1171,
+    "fields": {
+        "class_name": "Swift for Developers",
+        "content": "Get a quick practical introduction to Swift programming basics and build your first iOS app!",
+        "level": "Beginner",
+        "period": "7 Days",
+        "student": "None",
+        "subject": "Variables and Constants, Strings, Control Flow, Functions",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1172,
+    "fields": {
+        "class_name": "UX Design for Mobile Developers",
+        "content": "This is a design course made for developers. You'll learn UX design skills which will help you make 5-star mobile apps that your users will love.",
+        "level": "Beginner",
+        "period": "6 Weeks",
+        "student": "None",
+        "subject": "Android, UX Design, User-Centered Design",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1173,
+    "fields": {
+        "class_name": "Version Control with Git",
+        "content": "Learn how to use Git, a popular Version Control System and essential tool for any developer.",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Git, Version Control, Creating a Git repo, Editing commits",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1174,
+    "fields": {
+        "class_name": "WeChat Mini Program Development",
+        "content": "Developed by Tencent and Udacity, this course will teach you to build your first Mini Program.",
+        "level": "Beginner",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1175,
+    "fields": {
+        "class_name": "What is Programming?",
+        "content": "This course is your first step towards a career in programming.",
+        "level": "Beginner",
+        "period": "1 Day",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1176,
+    "fields": {
+        "class_name": "Writing READMEs",
+        "content": "Documentation is an important part of the development process. Learn to write READMEs using Markdown so your code can be used by other humans!",
+        "level": "Beginner",
+        "period": "3 Days",
+        "student": "None",
+        "subject": "README, Markdown, Making code easier to read",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1177,
+    "fields": {
+        "class_name": "Android Interview Prep",
+        "content": "Learn how to respond to common Android and mobile development interview questions.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Common Android Questions, Whiteboarding",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1178,
+    "fields": {
+        "class_name": "Data Science Interview Prep",
+        "content": "Prepare for data science interviews by practicing data analysis, machine learning, and data structure and algorithms questions.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Common Data Questions, Data Structures, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1179,
+    "fields": {
+        "class_name": "Data Structures & Algorithms in Swift",
+        "content": "Review and practice the skills technical interviewers expect you to know and learn how to explain your Swift solutions.",
+        "level": "Intermediate",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Interview practice, Swift, Data structures, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1180,
+    "fields": {
+        "class_name": "Front-End Interview Prep",
+        "content": "Answer front-end technical and behavioral interview questions with confidence and poise.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview questions, Common FE Questions, Whiteboarding, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1181,
+    "fields": {
+        "class_name": "Full-Stack Interview Prep",
+        "content": "Answer common full stack and web security interview questions with confidence and poise.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Common FS Questions, Whiteboarding, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1182,
+    "fields": {
+        "class_name": "iOS Interview Prep",
+        "content": "Answer iOS and mobile development interview questions with confidence and poise.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Common iOS Questions, Whiteboarding, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1183,
+    "fields": {
+        "class_name": "Machine Learning Interview Preparation",
+        "content": "In this course, you뭠l learn exactly what to expect during a machine learning interview.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Machine Learning, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1184,
+    "fields": {
+        "class_name": "VR Interview Prep",
+        "content": "Learn how to tackle interview questions for technical roles in VR Development.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Interview practice, Common VR Questions, Whiteboarding, Career Advancement",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1185,
+    "fields": {
+        "class_name": "A/B Testing",
+        "content": "This course will cover the design and analysis of A/B tests, also known as split tests, which are online experiments used to test potential improvements to a website or mobile application.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "A/B tests, Results Analysis, Statistical Significance",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1186,
+    "fields": {
+        "class_name": "Artificial Intelligence",
+        "content": "This course gives a survey of topics in AI along with in-depth foundational concepts such as classical search, probability, machine learning, logic and planning.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Artificial Intelligence, Probability, Bayesian Networks, Logic and Planning, Machine Learning",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1187,
+    "fields": {
+        "class_name": "Artificial Intelligence for Trading",
+        "content": "Complete real-world projects designed by industry experts, covering topics from asset management to trading signal generation. Master AI algorithms for trading, and build your career-ready portfolio.",
+        "level": "Intermediate",
+        "period": "6 Months",
+        "student": "702 Reviews",
+        "subject": "Momentum Trading Strategy, Smart Beta, Alpha Factors, Natural Language Processing, Deep Learning, Neural Networks",
+        "pre_ready": "Python & Mathematics",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1188,
+    "fields": {
+        "class_name": "AWS DeepRacer",
+        "content": "Learn the fundamentals of machine learning and reinforcement learning in a fun and engaging way through autonomous driving with AWS DeepRacer.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Machine Learning, Reinforcement Learning, AWS DeepRacer",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1189,
+    "fields": {
+        "class_name": "Big Data Analytics in Healthcare",
+        "content": "In this course, we introduce the characteristics of medical data and associated data mining challenges on dealing with such data. We cover various algorithms and systems.",
+        "level": "Intermediate",
+        "period": "",
+        "student": "None",
+        "subject": "Data Analytics, Health Care Applications, Algorithms",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1190,
+    "fields": {
+        "class_name": "Data Analysis with R",
+        "content": "Data is everywhere and so much of it is unexplored. Learn how to investigate and summarize data sets using R and eventually create your own analysis.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "R, Exploratory Data Analysis, Data Visualization",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1191,
+    "fields": {
+        "class_name": "Data Visualization and D3.js",
+        "content": "Learn the fundamentals of data visualization and apply design and narrative concepts to create your own visualization.",
+        "level": "Intermediate",
+        "period": "7 Weeks",
+        "student": "None",
+        "subject": "d3.js, Design of Visualizations, Data Visualization, Visual Encodings",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1192,
+    "fields": {
+        "class_name": "Deep Learning",
+        "content": "Deep learning is driving advances in artificial intelligence that are changing our world. Enroll now to build and apply your own deep neural networks to produce amazing solutions to important challenges.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "3130 Reviews",
+        "subject": "Deep Learning, Neural Networks, Jupyter Notebooks, CNNs, GANs",
+        "pre_ready": "Basic Python",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1193,
+    "fields": {
+        "class_name": "Intel?Edge AI Fundamentals with OpenVINO?",
+        "content": "Stay at the cutting-edge of AI technology by gaining practical skills for deploying edge AI. Learn how to use the Intel Distribution of OpenVINO toolkit to deploy computer vision capabilities inside a range of edge applications.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Edge AI, Intel OpenVINO, Computer Vision, Deep Learning",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1194,
+    "fields": {
+        "class_name": "Intro to Artificial Intelligence",
+        "content": "This course will introduce you to the basics of AI. Topics include machine learning, probabilistic reasoning, robotics, computer vision, and natural language processing.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Artificial Intelligence, Machine Learning, Probability, Logic and Planning, Markov models",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1195,
+    "fields": {
+        "class_name": "Intro to Deep Learning with PyTorch",
+        "content": "Learn the basics of deep learning and implement your own deep neural networks with PyTorch",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Deep Learning, PyTorch, Neural Networks, CNNs, LSTMs, Style Transfer",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1196,
+    "fields": {
+        "class_name": "Intro to Hadoop and MapReduce",
+        "content": "In this short course, learn the fundamentals of MapReduce and Apache Hadoop to start making sense of Big Data in the real world!",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Big Data, Hadoop, MapReduce",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1197,
+    "fields": {
+        "class_name": "Intro to Machine Learning with PyTorch",
+        "content": "Build a solid foundation in Supervised, Unsupervised, and Deep Learning. Then, use these skills to test and deploy machine learning models in a production environment.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "389 Reviews",
+        "subject": "Introduction to Machine Learning, Supervised Learning, Deep Learning, Unsupervised Learning",
+        "pre_ready": "Intermediate Python",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1198,
+    "fields": {
+        "class_name": "Intro to Machine Learning with TensorFlow",
+        "content": "Build a solid foundation in Supervised, Unsupervised, and Deep Learning. Then, use these skills to test and deploy machine learning models in a production environment.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "314 Reviews",
+        "subject": "TensorFlow, Deep Learning, scikit-learn, Supervised Learning, Unsupervised Learning",
+        "pre_ready": "Intermediate Python",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1199,
+    "fields": {
+        "class_name": "Intro to TensorFlow for Deep Learning",
+        "content": "Developed by Google and Udacity, this course teaches a practical approach to deep learning for software developers.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1200,
+    "fields": {
+        "class_name": "Introduction to Computer Vision",
+        "content": "This course provides an introduction to computer vision including fundamentals, methods for application and machine learning classification.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Image Processing, Stereo Geometry, Feature Detection & Matching, Object Tracking, Classification & Recognition",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1201,
+    "fields": {
+        "class_name": "Introduction to Machine Learning Course",
+        "content": "This class will teach you the end-to-end process of investigating data through a machine learning lens. Learn online, with Udacity.",
+        "level": "Intermediate",
+        "period": "10 Weeks",
+        "student": "None",
+        "subject": "Machine Learning, Supervised Learning, Unsupervised Learning, Evaluation Metrics, Data Manipulation",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1202,
+    "fields": {
+        "class_name": "Introduction to Machine Learning using Microsoft Azure",
+        "content": "Gain a high-level introduction to the field of machine learning and prepare to use Azure Machine Learning Studio to train machine learning models. Plus, learn how to perform a variety of tasks on Azure Machine Learning labs ?from data import, transformation and management to training, validating and evaluating models.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Machine Learning, Azure, Model Training, Supervised & Unsupervised Learning, Responsible AI",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1203,
+    "fields": {
+        "class_name": "Introduction to TensorFlow Lite",
+        "content": "Learn how to deploy deep learning models on mobile and embedded devices with TensorFlow Lite.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "TensorFlow Lite, Deep Learning Models, Android, iOS, Linux",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1204,
+    "fields": {
+        "class_name": "Linear Algebra Refresher Course",
+        "content": "Learn linear algebra by doing: you will code your own library of linear algebra functions!",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Algebra, Python, Vectors, Intersections",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1205,
+    "fields": {
+        "class_name": "Machine Learning",
+        "content": "In this course, you'll learn how to apply Supervised, Unsupervised and Reinforcement Learning techniques for solving a range of data science problems.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Supervised Learning, Unsupervised Learning, Information Theory, Reinforcement Learning, Game Theory",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1206,
+    "fields": {
+        "class_name": "Machine Learning Engineer",
+        "content": "Become a machine learning engineer and apply predictive models to massive data sets in fields like education, finance, healthcare or robotics.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "923 Reviews",
+        "subject": "Machine Learning, Supervised Learning, Unsupervised Learning, Deep Learning",
+        "pre_ready": "Intermediate Python & Machine Learning Algorithms",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1207,
+    "fields": {
+        "class_name": "Machine Learning Engineer for Microsoft Azure",
+        "content": "Strengthen your machine learning skills and build practical experience by training, validating, and evaluating models using Azure Machine Learning.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "179 Reviews",
+        "subject": "Azure Machine Learning, Azure Machine Learning SDK, Automation with Pipelines, Automated ML, Machine Learning Operations",
+        "pre_ready": "Prior experience with Python, Machine Learning, and Statistics",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1208,
+    "fields": {
+        "class_name": "Machine Learning for Trading",
+        "content": "Implement machine learning based strategies to make trading decisions using real-world data.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Pandas, Time Series Analysis, Computational Investing, Algorithmic Trading, Reinforcement Learning for Trading",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1209,
+    "fields": {
+        "class_name": "Machine Learning: Unsupervised Learning",
+        "content": "Ever wonder how Netflix can predict what movies you'll like? Or how Amazon knows what you want to buy before you do? The answer can be found in Unsupervised Learning!",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Randomized Optimization, Clustering, Feature Selection, Feature Transformation, Information Theory",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1210,
+    "fields": {
+        "class_name": "Real-Time Analytics with Apache Storm",
+        "content": "The world is trending in real time! Learn Apache Storm, taught by Twitter, to scalably analyze real-time tweets and drive d3 visualizations. Storm is free, open and fun!",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Data Analysis, Real-time Analytics, Apache Storm",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1211,
+    "fields": {
+        "class_name": "C++",
+        "content": "Get hands-on experience by building five real-world projects.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "914 Reviews",
+        "subject": "Data Structures & Algorithms, Memory Management, Concurrency, Object-oriented Programming, C++",
+        "pre_ready": "Intermediate Programming",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1212,
+    "fields": {
+        "class_name": "Database Systems Concepts & Design",
+        "content": "This course presents an example of applying a database application development methodology to a major real-world project.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "Database Management Systems, Relational Algebra, Sequential Query Language, Data Indexing, SQL Injection",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1213,
+    "fields": {
+        "class_name": "Differential Equations in Action",
+        "content": "Write Python code to find numerical solutions to systems of differential equations. The models you create will fight wildfires, bring spaceships back to earth, and more!",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Math, Differential Equations",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1214,
+    "fields": {
+        "class_name": "Intro to Self-Driving Cars",
+        "content": "This introductory program is the perfect way to start your journey.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "730 Reviews",
+        "subject": "Computer Vision, Machine Learning, Vehicle Motion, Control",
+        "pre_ready": "Programming & Mathematics",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1215,
+    "fields": {
+        "class_name": "AI for Business Leaders",
+        "content": "Master the foundations of artificial intelligence so you can strategically implement machine learning technology in your organization, and leverage it for corporate growth.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "67 Reviews",
+        "subject": "Artificial Intelligence, Machine Learning, Business Strategy, Data Labeling, Data Modeling",
+        "pre_ready": "Statistics, Probability, and Business Experience",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1216,
+    "fields": {
+        "class_name": "App Marketing",
+        "content": "This course will help you organize a strategy of identifying your perfect user, and teach you how to grow your user base by focusing your product on their needs.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "App Marketing, User Segmentation, Customer Acquisition",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1217,
+    "fields": {
+        "class_name": "Classification Models",
+        "content": "Learn how to use classification predictive models to solve business problems involving non-numeric data.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Binary Classication Models, Non-Binary Classification Models",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1218,
+    "fields": {
+        "class_name": "Cloud Computing for Business Leaders",
+        "content": "This program will focus on the unique knowledge and skills that business leaders need to unlock the value of cloud technologies in their organizations, or enable a more cloud-native department that leverages cloud computing to drive growth and create operational efficiencies.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Digital transformation, leadership, management, cloud governance model, novel cloud services, operational efficiencies, cloud center of excellence",
+        "pre_ready": "Word Processors, Spreadsheets, Presentation Tools",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1219,
+    "fields": {
+        "class_name": "Data Science for Business Leaders",
+        "content": "Master the people, platforms, and processes required to leverage the power of Data Science in your business.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "62 Reviews",
+        "subject": "Business Strategy, Data Science, Data Architecture, Machine Learning, Human Capital",
+        "pre_ready": "Statistics, Probability, and Business Experience",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1220,
+    "fields": {
+        "class_name": "Get Your Startup Started",
+        "content": "Acquire the know-how necessary to see your business grow towards its next milestone.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Entrepreneurship, Bootstrapping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1221,
+    "fields": {
+        "class_name": "How to Build a Startup",
+        "content": "Learn what it takes to build a successful startup using the Customer Development process, where entrepreneurs \"get out of the building\" to gather and iterate on feedback.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Entrepreneurship, Value Proposition, Revenue Models, Customer Segments",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1222,
+    "fields": {
+        "class_name": "Segmentation and Clustering",
+        "content": "The Segmentation & Clustering course provides students with the knowledge to build and apply clustering models to develop sophisticated segmentation in business contexts.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Variable Reduction, Clustering Models design",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1223,
+    "fields": {
+        "class_name": "Time Series Forecasting",
+        "content": "The Time Series Forecasting course provides students with the foundational knowledge to build and apply time series forecasting models in a variety of business contexts.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Time Series Forecasting, ETS Models, ARIMA Models",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1224,
+    "fields": {
+        "class_name": "Cloud Developer",
+        "content": "Cloud development is the foundation for the new world of software development. Enroll now to build and deploy production-ready full stack apps at scale on AWS, an essential skill for advancing your web development career.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "669 Reviews",
+        "subject": "AWS, Microservices, Serverless Architecture, Kubernetes",
+        "pre_ready": "Intermediate JavaScript",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1225,
+    "fields": {
+        "class_name": "Cloud Developer using Microsoft Azure",
+        "content": "The Cloud Developer using Microsoft Azure program prepares students with critical cloud computing skills in how to deploy, build, migrate, and monitor applications on Azure.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Virtual Machines, App Services, Microservices, Serverless Functions, Cloud Migration",
+        "pre_ready": "Intermediate programming experience, familiarity with SQL databases and Git",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1226,
+    "fields": {
+        "class_name": "Cloud DevOps Engineer",
+        "content": "Companies are looking for talented DevOps engineers to remain competitive in this agile world. Enroll now to operationalize infrastructure at scale and deliver applications and services at high velocity, an essential skill for advancing your career.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "665 Reviews",
+        "subject": "AWS, Configuration Management with Ansible, Continuous Integration / Continuous Deployment, Microservices with Kubernetes, CloudFormation",
+        "pre_ready": "Intermediate JavaScript",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1227,
+    "fields": {
+        "class_name": "Cloud DevOps using Microsoft Azure",
+        "content": "Learn how to deploy, test, and monitor cloud applications on Azure, one of the most popular cloud services platforms used by businesses across the globe.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "70 Reviews",
+        "subject": "Infrastructure as Code, Configuration Management, Agile Planning, Continuous Integration, Continuous Delivery, Test Automation, Monitoring",
+        "pre_ready": "Intermediate Python, familiarity with Linux shell scripting and cloud concepts",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1228,
+    "fields": {
+        "class_name": "Cloud Native Application Architecture",
+        "content": "You뭠l master the skills necessary to become a successful cloud native architect. Learn to run and manage scalable applications in a cloud native environment, using open source tools and projects like ArgoCD, gRPC, and Grafana.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Microservice architecture, Kubernetes, Continuous Integration, Continuous Delivery, Message Passing, Observability, Microservices security",
+        "pre_ready": "HTTP, Python, Git, Linux, Docker",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1229,
+    "fields": {
+        "class_name": "Hybrid Cloud Engineer",
+        "content": "This Nanodegree program, built in collaboration with experts from Nutanix, a leader in the cutting edge field of hyperconverged infrastructure software, takes cloud technology and data-center professionals on an in-depth journey into the design, deployment, and management of infrastructure and applications together on the Hybrid Cloud. Master the concepts you need to transform how your IT teams manage applications and support the business.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "189 Reviews",
+        "subject": "Hyper-converged infrastructure, Hybrid Cloud, Public Cloud, Private Cloud, HCI Clusters, Workload Management, On premise, Off premise",
+        "pre_ready": "Experience working with command line and virtual machines",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1230,
+    "fields": {
+        "class_name": "Hybrid Cloud Fundamentals",
+        "content": "Dive into the role of a hybrid cloud engineer and learn how to use Nutanix's Hyperconverged Infrastructure (HCI) software to configure the different components of a private cloud cluster.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Hybrid Cloud, Nutanix, Hyperconverged Infrastructure, Prism web console, Private Cloud, Virtual Machine",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1231,
+    "fields": {
+        "class_name": "Security Analyst",
+        "content": "Learn to identify, correct and respond to security weaknesses and incidents. You뭠l also get real-world experience monitoring network traffic, analyzing alert and log data, and following incident handling procedures.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Security controls, Defensible Network Architecture, security threat mitigation, threat modeling, vulnerability assessment, incident detection and handling",
+        "pre_ready": "Experience with Python, SQL, and security fundamentals",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1232,
+    "fields": {
+        "class_name": "Security Engineer",
+        "content": "Take advantage of the growing need for skilled security professionals by mastering the sought-after skills to protect an organization뭩 computer networks and systems from security threats or attacks.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Cryptography, Risk Evaluation, Authentication, Authorization, Access Management, Penetration Testing",
+        "pre_ready": "Basics of Python, experience configuring AWS and Linux environments",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1233,
+    "fields": {
+        "class_name": "Data Analysis and Visualization",
+        "content": "This course will introduce students to the field by covering state?of-춗he-art modeling, analysis and visualization techniques.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "R, Data Analysis, Data Visualization, Regression",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1234,
+    "fields": {
+        "class_name": "Data Analyst",
+        "content": "Use Python, SQL, and statistics to uncover insights, communicate critical findings, and create data-driven solutions.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "3147 Reviews",
+        "subject": "Data Wrangling, Matplotlib, Bootstrapping, Pandas & NumPy, Statistics",
+        "pre_ready": "Python & SQL",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1235,
+    "fields": {
+        "class_name": "Data Engineer",
+        "content": "Data Engineering is the foundation for the new world of Big Data. Enroll now to build production-ready data infrastructure, an essential skill for advancing your data career.",
+        "level": "Intermediate",
+        "period": "5 Months",
+        "student": "1349 Reviews",
+        "subject": "Data Modeling, Data Pipelines, Data Lakes, Spark, Airflow",
+        "pre_ready": "Intermediate Python & SQL",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1236,
+    "fields": {
+        "class_name": "Intro to Data Science",
+        "content": "What does a data scientist do? In this course, we will survey the main topics in data science so you can understand the skills that are needed to become a data scientist!",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Data Analysis Process, pandas (Python package), MapReduce paradigm",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1237,
+    "fields": {
+        "class_name": "Spark",
+        "content": "Master how to work with big data and build machine learning models at scale using Spark!",
+        "level": "Intermediate",
+        "period": "10 Hours",
+        "student": "None",
+        "subject": "Spark, SparkSQL, Spark Dataframes, Data Wrangling, Machine Learning",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1238,
+    "fields": {
+        "class_name": "A/B Testing for Business Analysts",
+        "content": "The A/B Testing course provides students with the foundational knowledge to design and analyze A/B tests to create business insights and support decision making.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "A/B Randomized Design Tests, A/B Matched Pair Design Tests",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1239,
+    "fields": {
+        "class_name": "Activation and Retention Strategy",
+        "content": "Hone specialized Product Management skills in activation and retention strategy. Guide users through the activation funnel as fast as possible, so they reach your product뭩 aha-moment, and deploy experiments to improve customer lifetime value and decrease churn.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Product Management, Activation Funnels, Retention Analysis, Churn Analysis, Segment Analysis, User Engagement, Cohort Analysis",
+        "pre_ready": "Prior Product Management Experience Recommended",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1240,
+    "fields": {
+        "class_name": "App Monetization",
+        "content": "Learn how to effectively develop, implement, and measure your monetization strategy, iterating on the model as appropriate.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Product Design, Google Analytics",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1241,
+    "fields": {
+        "class_name": "Data Product Manager",
+        "content": "Hone specialized skills in Data Product Management by learning how to apply data science best practices to build data-driven products backed by scalable data strategies to deliver the right experience to the right users, at the right time.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "162 Reviews",
+        "subject": "Data Science, Product Management, Product Design, Data Visualization, User Journey Maps",
+        "pre_ready": "Prior Data Analysis & Product Management Experience Recommended",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1242,
+    "fields": {
+        "class_name": "Growth Product Manager",
+        "content": "Hone specialized Product Management skills in growth strategy. Lead experimentation and data-driven decision-making in your organization to drive products to reach the next level of scale, impact, and profitability.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Product Management, Growth Strategy, Customer Acquisition, Activation Strategy, Monetization Strategy, Performance Optimization",
+        "pre_ready": "Prior Product Management Experience Recommended",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1243,
+    "fields": {
+        "class_name": "Monetization Strategy",
+        "content": "Monetization Strategy is the third of three courses in the Growth Product Manager Nanodegree program. Hone specialized Product Management skills in monetization strategy by learning how to implement strategies to drive profitable growth for your business. Build and test pricing plans and market selection, target the right buyer personas, and be equipped to harness their full lifetime value.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Product Management, Monetization Models, Pricing Strategy, Buyer Personas, Lifetime Value, Customer Acquisition Cost, Pricing Metrics, Growth Strategy",
+        "pre_ready": "Prior Product Management Experience Recommended",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1244,
+    "fields": {
+        "class_name": "Product Design",
+        "content": "Learn product validation, UI/UX practices, Google뭩 Design Sprint and the process for setting and tracking actionable metrics.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Product Design, Design Sprints, Ideation and Validation, UI/UX",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1245,
+    "fields": {
+        "class_name": "Rapid Prototyping",
+        "content": "Learning to prototype will save you time and money in the development process. You뭠l create quality apps faster and have confidence in the viability of your products.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Prototyping, User Research, inVision",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1246,
+    "fields": {
+        "class_name": "2D Game Development with libGDX",
+        "content": "This course explores how to use LibGDX to build 2D games that run anywhere, from web browsers to mobile devices. At the end you will create a full game, called Icicles.",
+        "level": "Intermediate",
+        "period": "8 Weeks",
+        "student": "None",
+        "subject": "LibGDX, Game Development, 2D",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1247,
+    "fields": {
+        "class_name": "Advanced Android with Kotlin",
+        "content": "Develop Feature-Rich Android Apps with the Kotlin Programming Language.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Kotlin, Android",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1248,
+    "fields": {
+        "class_name": "Android Kotlin Developer",
+        "content": "Master Android app development with Kotlin, a modern programming language that enables developers to be more productive.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "237 Reviews",
+        "subject": "Android Development, Kotlin, Android Studio, Gradle, RESTful interfaces, Web APIs, App Architecture, Databases, Custom Views, Notifications, Location Services, Testing, Firebase",
+        "pre_ready": "Experience with Object-Oriented Programming",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1249,
+    "fields": {
+        "class_name": "Asynchronous JavaScript Requests",
+        "content": "Learn how to asynchronously request data in your web applications with Ajax.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Asynchronous Data Retrieval, Ajax with XHR, Ajax with jQuery, Ajax with Fetch",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1250,
+    "fields": {
+        "class_name": "Authentication & Authorization: OAuth",
+        "content": "Learn to implement the OAuth 2.0 framework to allow users to securely and easily login to your web applications.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Flask, OAuth 2.0, Authentication & Authorization, Python",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1251,
+    "fields": {
+        "class_name": "AutoLayout",
+        "content": "With this course, you will learn about AutoLayout and how to use stack views and constraints to create pixel-perfect UIs.",
+        "level": "Intermediate",
+        "period": "6 Days",
+        "student": "None",
+        "subject": "Design, UI, Stack Views, Constraints",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1252,
+    "fields": {
+        "class_name": "Blockchain Developer",
+        "content": "Demand for blockchain developers is skyrocketing. In this program, you'll work with the Bitcoin and Ethereum protocols, build projects for real-world application, and gain the essential skills for a career in this dynamic space.",
+        "level": "Intermediate",
+        "period": "5 Months",
+        "student": "360 Reviews",
+        "subject": "Ethereum Blockchain, Blockchain Architecture, Data Auditing",
+        "pre_ready": "Object-oriented programming",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1253,
+    "fields": {
+        "class_name": "Build Native Mobile Apps with Flutter",
+        "content": "Learn from experts at Google how to use Flutter to craft high-quality native interfaces on iOS and Android devices in record time.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Android Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1254,
+    "fields": {
+        "class_name": "Building High Conversion Web Forms",
+        "content": "Increase conversions with best practices for fast, efficient forms! Learn how to design and build web forms for users on any device.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Research HTML5 input types, Datalist input, User input validation with HTML5 attributes, Validate user input using JavaScript, Optimizing forms",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1255,
+    "fields": {
+        "class_name": "C++ For Programmers",
+        "content": "This course teaches C++ to students already familiar with a programming language. Students will learn how to use header files, control flow, functions, classes.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Pointers and Arrays, Control Flow, Object-Oriented Programming, C++ Templates, C++ Standard Library",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1256,
+    "fields": {
+        "class_name": "Compilers: Theory and Practice",
+        "content": "This course teaches the theory and practice behind building compilers for higher level programming languages.",
+        "level": "Intermediate",
+        "period": "",
+        "student": "None",
+        "subject": "Compilers, Semantic Analysis, Syntax Directed Translation, Control Flow Analysis",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1257,
+    "fields": {
+        "class_name": "Computer Networking",
+        "content": "This is an advanced Computer Networking course that delves into the latest concepts and tools used by the CN industry.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Software-Defined Networking, Data Center Networking, Content Distribution, Congestion Control, Traffic Shaping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1258,
+    "fields": {
+        "class_name": "Continuous Integration and Deployment",
+        "content": "In this course, you'll learn how to improve the mobile development process by using continuous integration and deployment.",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "Continuous Integration, BuddyBuild, Automated Testing",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1259,
+    "fields": {
+        "class_name": "Core ML: Machine Learning for iOS",
+        "content": "Learn how to use Apple's Core ML framework to build iOS apps with intelligent new features.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "iOS, Image Classification, Core ML",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1260,
+    "fields": {
+        "class_name": "Cyber-Physical Systems Security",
+        "content": "This course provides an introduction to security issues relating to cyber-physical systems including industrial control systems and critical infrastructures.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "Industrial Networks, Industrial Control Systems, Smart Grid Infrastructure, Cyber Security, Privacy",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1261,
+    "fields": {
+        "class_name": "Data Structures and Algorithms",
+        "content": "Get hands-on practice with over 100 data structures and algorithm exercises and technical mentor support when needed to help prepare you for interviews and on-the-job scenarios.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "730 Reviews",
+        "subject": "Data Structures and Algorithms, Problem Solving, Interview Practice Problems, Python",
+        "pre_ready": "Python and Basic Algebra",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1262,
+    "fields": {
+        "class_name": "Data Wrangling with MongoDB",
+        "content": "Data Scientists spend most of their time cleaning data. In this course, you will learn to convert and manipulate messy data to extract what you need.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Gathering Data, Assessing Data, Cleaning Data, Data Wrangling, MongoDB",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1263,
+    "fields": {
+        "class_name": "Deploying a Hadoop Cluster",
+        "content": "Deploy your own Hadoop cluster to crunch some big data!",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Data Analysis, Hadoop, MapReduce",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1264,
+    "fields": {
+        "class_name": "Deploying Applications with Heroku",
+        "content": "Deploy your first web application using the Heroku platform and learn about the underlying mechanics of web hosting.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "App Deployment, Heroku",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1265,
+    "fields": {
+        "class_name": "Designing RESTful APIs",
+        "content": "Build and secure a web server with a RESTful Developer-Friendly API that developers will love to use.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Flask, REST APIs, Python",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1266,
+    "fields": {
+        "class_name": "Developing Android Apps",
+        "content": "Build a cloud-connected Android app, and learn the tools, principles, and best practices of mobile and Android development that you'll apply to your own projects.",
+        "level": "Intermediate",
+        "period": "60 Hours",
+        "student": "None",
+        "subject": "Android Development, Layouts, Intents, UI",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1267,
+    "fields": {
+        "class_name": "Developing Android Apps with Kotlin",
+        "content": "Learn the fundamentals of the Kotlin programming language from Kotlin experts at Google.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Android Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1268,
+    "fields": {
+        "class_name": "Dynamic Web Applications with Sinatra",
+        "content": "Sinatra is a micro-framework for quickly developing small Ruby applications for the web. In this course, you'll learn all about Sinatra, routing, and templating.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Ruby, Sinatra, Building web applications",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1269,
+    "fields": {
+        "class_name": "Embedded Systems",
+        "content": "This course takes a holistic view of the embedded system stack focusing on processor architectures, instruction sets, and the associated advanced compiler optimizations.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "VLIW Architecture, Compilers for Embedded Systems, Differential Register Allocation, Network Processors, Multithreaded Processing",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1270,
+    "fields": {
+        "class_name": "Firebase Analytics: Android",
+        "content": "Learn how to grow an app's user base using Firebase Analytics, a free and unlimited analytics solution",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "Android Development, Firebase, Analytics",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1271,
+    "fields": {
+        "class_name": "Firebase Analytics: iOS",
+        "content": "Learn how to grow an app's user base using Firebase Analytics, a free and unlimited analytics solution",
+        "level": "Intermediate",
+        "period": "1 Day",
+        "student": "None",
+        "subject": "Android Development, Firebase Analytics, Firebase Crash Reporting, Firebase Remote Config, Firebase Dynamic Links",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1272,
+    "fields": {
+        "class_name": "Firebase in a Weekend: Android",
+        "content": "This course will teach you when and why to choose Firebase as a backend for your Android application.",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "Android Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1273,
+    "fields": {
+        "class_name": "Firebase in a Weekend: iOS",
+        "content": "This course will teach you when and why to choose Firebase as a backend for your iOS application.",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "Android Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1274,
+    "fields": {
+        "class_name": "Front End Web Developer",
+        "content": "Learn how to build high quality websites and dynamic applications to create stunning user experiences for the web.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "1020 Reviews",
+        "subject": "JavaScript, HTML, CSS, Webpack, Flexbox, Node, Object-oriented Programming",
+        "pre_ready": "Knowledge of basic HTML, CSS, and JavaScript",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1275,
+    "fields": {
+        "class_name": "Full Stack Foundations",
+        "content": "Learn the fundamentals of back-end web development by creating your own web application from the ground up using the iterative development process.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Flask, CRUD, Model-View-Controller, Python, Object-relational Mapping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1276,
+    "fields": {
+        "class_name": "Full Stack JavaScript Developer",
+        "content": "You뭠l master the skills necessary to become a successful full stack developer. Learn how to build UI and UX, create APIs and server side business logic and develop the persistence layer to store, process and retrieve data.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Creating an API, Databases and SQL, Node.js, Angular, TypeScript, Deployment",
+        "pre_ready": "HTML, CSS, Basic JavaScript, JSON",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1277,
+    "fields": {
+        "class_name": "Full Stack Web Developer",
+        "content": "Learn to design and develop powerful modern web applications that form the foundation for the apps, websites, and systems that people and businesses use every day.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "644 Reviews",
+        "subject": "Python, JavaScript, PostgreSQL, Flask, Docker, Kubernetes",
+        "pre_ready": "Prior experience with Python, CSS/HTML, and Git",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1278,
+    "fields": {
+        "class_name": "Google Maps APIs",
+        "content": "This course will introduce you to the content available through the Google Maps APIs through building a real-estate listings web application step-by-step.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Google Maps APIs, Static Maps, Street View imagery, monitoring API usage",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1279,
+    "fields": {
+        "class_name": "Grand Central Dispatch (GCD)",
+        "content": "Learn how to prevent background operations from interfering with an app's UI by implementing Apple's GCD framework.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Closures, GCD",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1280,
+    "fields": {
+        "class_name": "GT - Refresher - Advanced OS",
+        "content": "This course covers the essential Operating Systems concepts students need in preparation for the rest of the GT \"Advanced Operating Systems\" sequence.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Operating Systems, Virtual Memory, File Systems, Multithreaded Programming, Networking",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1281,
+    "fields": {
+        "class_name": "How to Make a Platformer Using libGDX",
+        "content": "This course will explore how to create a game called Giga Gal. Giga Gal is a platformer in which you run, collect energy packs, jump a bunch, and shoot enemies.",
+        "level": "Intermediate",
+        "period": "8 Weeks",
+        "student": "None",
+        "subject": "LibGDX, Game Development, Asset management",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1282,
+    "fields": {
+        "class_name": "HTTP & Web Servers",
+        "content": "HTTP is the fundamental protocol of the Web. Explore how it works using Python code and command-line tools.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "HTTP, Python, Deploying services",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1283,
+    "fields": {
+        "class_name": "Human-Computer Interaction",
+        "content": "This course is an introductory course on human-computer interaction, covering the principles, techniques, and open areas of development in HCI.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "Design Principles, Direct Manipulation Interfaces, Mental Models, Distributed Cognition, Prototyping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1284,
+    "fields": {
+        "class_name": "Interactive 3D Graphics",
+        "content": "This course will teach you the principles of 3D computer graphics: meshes, transforms, lighting, animation, and making interactive 3D applications run in a browser.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Animated 3D Demo Program, Computer Image Generation, Programming Vertex and Pixel Shaders",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1285,
+    "fields": {
+        "class_name": "Intermediate JavaScript",
+        "content": "Master JavaScript, the most popular programming language in the world. Be equipped for advanced roles in web development, server-side application development, and desktop development.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "120 Reviews",
+        "subject": "Functional Programming, DOM, Data Structures, Asynchronous Programming, Synchronous Programming",
+        "pre_ready": "Basic JavaScript",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1286,
+    "fields": {
+        "class_name": "Intermediate Python",
+        "content": "The Intermediate Python Nanodegree program teaches intermediate-level skills for programming with the Python language. It is ideal for developers interested in using Python to build more complex algorithms with greater capabilities in preparation for a variety of different roles spanning fields like data science, AI, and software engineering.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "60 Reviews",
+        "subject": "Python, Object-oriented programming, Modular code, Python Package Index",
+        "pre_ready": "Basic Python",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1287,
+    "fields": {
+        "class_name": "Intro to AJAX",
+        "content": "Learn how to perform asynchronous requests as you build a web app with data from Google Street View, the New York Times and Wikipedia!",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Asynchronous requests with JavaScript, Data APIs, Web Applications, Site Customization",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1288,
+    "fields": {
+        "class_name": "Intro to Algorithms",
+        "content": "This class will give you an introduction to the design and analysis of algorithms, enabling you to analyze networks and discover how individuals are connected.",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "None",
+        "subject": "Algorithms, Social Networks, Graph Algorithms",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1289,
+    "fields": {
+        "class_name": "Intro to Backend",
+        "content": "Learn to build a multiuser blog with Google App Engine that permits users to sign in",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "User Input, Producing templated output, Databases and data stores, Secure user account systems",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1290,
+    "fields": {
+        "class_name": "Intro to Information Security",
+        "content": "",
+        "level": "Intermediate",
+        "period": "",
+        "student": "None",
+        "subject": "Software Security, Cryptography, Network Security, Privacy, Public Policy",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1291,
+    "fields": {
+        "class_name": "Intro to iOS App Development with Swift",
+        "content": "Take the first step in becoming an iOS Developer by learning about Swift and writing your first app.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Swift, UIKit, AVFoundation",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1292,
+    "fields": {
+        "class_name": "Intro to jQuery",
+        "content": "Learn how to access and modify the DOM with ease using jQuery!",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "jQuery, DOM Structure, Reading jQuery documentation, Modify HTML attributes and content",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1293,
+    "fields": {
+        "class_name": "Intro to Progressive Web Apps",
+        "content": "In this course you뭠l get started working on your very first Progressive Web App (PWA) - a web app that can take advantage of many features native applications have enjoyed!",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Progressive Web Apps, Service Workers, Web App Manifest, Offline apps",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1294,
+    "fields": {
+        "class_name": "Intro to Relational Databases",
+        "content": "Relational databases are a powerful tool used throughout the industry. Learn the basics of SQL and how to connect your Python code to a relational database.",
+        "level": "Intermediate",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Rational databases, SQL, Python API, Python DB-API, Select and insert statements",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1295,
+    "fields": {
+        "class_name": "Intro to Theoretical Computer Science",
+        "content": "Learn the basic concepts in theoretical computer science. Discover what they imply for solving tough computational challenges.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "theoretical computer science, NP-completeness, Recognizing algorithmic problems, Solving algorithmic problems",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1296,
+    "fields": {
+        "class_name": "Introduction to Operating Systems",
+        "content": "Introduction to Operating Systems teaches the basic operating system abstractions, mechanisms, and their implementations.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Processes & Threads, Memory Management, Inter-Process Communication, Resource Virtualization, Distributed File Systems",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1297,
+    "fields": {
+        "class_name": "iOS Design Patterns",
+        "content": "In this course, you'll explore iOS design patterns ?the practical and battle-tested solutions to common problems that are used everyday by developers.",
+        "level": "Intermediate",
+        "period": "2 Days",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1298,
+    "fields": {
+        "class_name": "Java Developer",
+        "content": "Learn back-end development with the Java programming language",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": "283 Reviews",
+        "subject": "Java, Spring Boot, Rest API, MySQL, MongoDB",
+        "pre_ready": "Intermediate knowledge of Java",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1299,
+    "fields": {
+        "class_name": "JavaScript and the DOM",
+        "content": "",
+        "level": "Intermediate",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1300,
+    "fields": {
+        "class_name": "JavaScript Testing",
+        "content": "Learn how to iterate on your web applications with confidence using the red-green-refactor workflow cycle and automated testing frameworks.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Javascript Apps, Jasmine testing framework, red-green-refactor workflow",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1301,
+    "fields": {
+        "class_name": "Kotlin Bootcamp for Programmers",
+        "content": "Learn the fundamentals of the Kotlin programming language from Kotlin experts at Google.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Android Development",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1302,
+    "fields": {
+        "class_name": "Learn Swift Programming Syntax",
+        "content": "This course focuses on the syntax of the Swift programming language. By the end of the course, you'll be able to apply Swift essentials to building iOS apps.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Variables and Constants, Control Flow, Functions, Optionals, OOP",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1303,
+    "fields": {
+        "class_name": "Material Design for Android Developers",
+        "content": "Learn and apply the material design principles that define Android's visual language to your apps.",
+        "level": "Intermediate",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Android Development, Material Design, Surfaces, Graphic Design",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1304,
+    "fields": {
+        "class_name": "Mobile Design and Usability for Android",
+        "content": "In this course, taught in collaboration with Facebook, you'll learn how to design an intuitive, user-centered mobile app, from product conception to release.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Android, Mobile Design, Usability",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1305,
+    "fields": {
+        "class_name": "Mobile Design and Usability for iOS",
+        "content": "In this course, taught in collaboration with Facebook, you'll learn how to design an intuitive, user-centered mobile app, from product conception to release.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Product Design, Prototyping",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1306,
+    "fields": {
+        "class_name": "Network Security",
+        "content": "This course provides an introduction to computer and network security. Students successfully completing this class will be able to evaluate works in academic and commercial security, and will have rudimentary skills in security research.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "Basic elements of cryptography, cryptanalysis and systems security, security research",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1307,
+    "fields": {
+        "class_name": "Object Oriented Programming in Java",
+        "content": "Learn how to apply powerful object-oriented programming concepts in Java",
+        "level": "Intermediate",
+        "period": "4 Weeks",
+        "student": "None",
+        "subject": "Object-Oriented Programming, Java, User Interaction",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1308,
+    "fields": {
+        "class_name": "Objective-C for Swift Developers",
+        "content": "Learn the distinguishing language features of Objective-C. Practice Objective-C syntax by writing classes, and writing and calling methods.",
+        "level": "Intermediate",
+        "period": "5 Weeks",
+        "student": "None",
+        "subject": "iOS, Swift, Objective-C, Control Flow Syntax",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1309,
+    "fields": {
+        "class_name": "Object-Oriented JavaScript",
+        "content": "",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Object Oriented Javascript, Object-oriented programming, Data and functionality, Prototypal inheritance",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1310,
+    "fields": {
+        "class_name": "Offline Web Applications",
+        "content": "Learn how to develop offline-first web application using Service Workers and IndexedDB.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": "None",
+        "subject": "Developing offline-first applications, Understanding Lie-Fi, Service Worker DevTools, IndexedDB, IndexedDB asset caching",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1311,
+    "fields": {
+        "class_name": "Passwordless Login Solutions for iOS",
+        "content": "In this course you'll implement Account Kit and Facebook Login side by side in a sample app, test our login flow on a series of common use cases, and wrap things up with an introduction to Facebook뭩 Graph API.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": "None",
+        "subject": "Account Kit, Facebook SDK, Graph API",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1312,
+    "fields": {
+        "class_name": "Programming Languages",
+        "content": "This course is an introduction to the fundamentals of programming languages. Concepts include how to specify and process valid strings, sentences and program structures.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Introduciton to Programming Languages, Validate and Process Strings, HTML and JavaScript, Build your own web browser",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1313,
+    "fields": {
+        "class_name": "React",
+        "content": "React is completely transforming Front-End Development. Master this powerful UI library from Facebook with Udacity.",
+        "level": "Intermediate",
+        "period": "12 Weeks",
+        "student": "1103 Reviews",
+        "subject": "React, Redux, React Native",
+        "pre_ready": "HTML, JavaScript, & Git",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1314,
+    "fields": {
+        "class_name": "Responsive Images",
+        "content": "Go beyond image tags! Learn how to make images a part of your responsive design workflow.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Responsive Images, Mobile Image debugging, Creating responsive graphics",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1315,
+    "fields": {
+        "class_name": "Responsive Web Design Fundamentals",
+        "content": "Learn and practice strategies for developing websites that look great on every device! Made with Google's Pete LePage.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Responsive design patterns, Remote debugging and emulation, Optimizing layout, CSS media queries, CSS flexbox",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1316,
+    "fields": {
+        "class_name": "Scalable Microservices with Kubernetes",
+        "content": "This course is designed to teach you about managing microservices, using Kubernetes. This course is built in partnership with experts such as Google뭩 Kelsey Hightower.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": "None",
+        "subject": "Microservices, Docker, Kubernetes, Deploying Microservices",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1317,
+    "fields": {
+        "class_name": "Server-Side Swift",
+        "content": "In this course, built in collaboration with IBM and Hashicorp, you'll learn how to use Swift as a server-side language for building end-to-end applications.",
+        "level": "Intermediate",
+        "period": "2 Weeks",
+        "student": "None",
+        "subject": "Swift Package Manager, MySQL, Docker, Terraform, Microservices",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1318,
+    "fields": {
+        "class_name": "Software Analysis & Testing",
+        "content": "This course covers the theory and practice of software analysis, which is at the heart of software development processes such as diagnosing bugs, testing, and debugging.",
+        "level": "Intermediate",
+        "period": "16 Weeks",
+        "student": "None",
+        "subject": "Software Testing, Debugging, Dataflow Analysis, Constraint-based Analysis, Symbolic Execution",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1319,
+    "fields": {
+        "class_name": "Software Architecture & Design",
+        "content": "Software Architecture and Design teaches the principles and concepts involved in the analysis and design of large software systems.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Unified Modeling Language, Object Constraint Language, Software Architecture, Software Design, Code Review",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1320,
+    "fields": {
+        "class_name": "Software Debugging",
+        "content": "In this course you will learn how to debug programs systematically using scientific methods and build several automated debugging tools in Python.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": "None",
+        "subject": "Debugging, Python, Automated Debugging",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1321,
+    "fields": {
+        "class_name": "Software Development Process",
+        "content": "Software Development Processes explores requirements engineering, architecture and design, testing, and software quality in general.",
+        "level": "Intermediate",
+        "period": "3 Months",
+        "student": "None",
+        "subject": "Software Development Life Cycle, Requirements Engineering, Design Patterns, Black-Box & White-Box Testing, Agile Development Methodology",
+        "pre_ready": "None",
+        "lecture_image": "",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1322,
+    "fields": {
+        "class_name": "Software Testing",
+        "content": "Learn how to catch bugs and break software as you discover different testing methods that will help you build better software.",
+        "level": "Intermediate",
+        "period": "1 Month",
+        "student": null,
+        "subject": "Software Testing, Debugging, Code Coverage",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/9_CYAEAL5.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1323,
+    "fields": {
+        "class_name": "The MVC Pattern in Ruby",
+        "content": "In this course you뭠l learn how to organize your code, and why that뭩 important. You뭠l be using the MVC Design Pattern in the web application micro-framework Sinatra.",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": null,
+        "subject": "Ruby, Sinatra, MVC Design Pattern, Writing organized code",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/8_ft0jbUe.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1324,
+    "fields": {
+        "class_name": "UIKit Fundamentals",
+        "content": "Learn the iOS UIKit framework, which is the cornerstone of creating user interfaces in all iOS apps and crucial for any iOS Developer to be intimately familiar with.",
+        "level": "Intermediate",
+        "period": "2 Months",
+        "student": null,
+        "subject": "AutoLayout, Navigation, Table Views, Collection Views",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/7_Wwzrteh.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1325,
+    "fields": {
+        "class_name": "Web Tooling & Automation",
+        "content": "In this course, you뭠l learn how to setup your development environment and save a lot of time and effort with automatic optimization.",
+        "level": "Intermediate",
+        "period": "3 Weeks",
+        "student": null,
+        "subject": "Installing Sublime Text, Installing Plugins, Gulp, Live Editing, ESLint",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/6_8SiLLDX.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1326,
+    "fields": {
+        "class_name": "Website Performance Optimization",
+        "content": "Learn how browsers convert HTML, CSS and JavaScript into websites while you experiment with Chrome Developer Tools to measure and optimize website speed!",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": null,
+        "subject": "Chrome Developer Tools, DOM and CSSOM, Critical Rendering Path HTML, CSS and JavaScript optimizations",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/5_xQZHRMy.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1327,
+    "fields": {
+        "class_name": "Reinforcement Learning",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "level": "Intermediate",
+        "period": "4 Months",
+        "student": null,
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/4_rCNAyCG.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1328,
+    "fields": {
+        "class_name": "Configuring Linux Web Servers",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "level": "Advanced",
+        "period": "1 Week",
+        "student": null,
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/3_QemWzJv.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1329,
+    "fields": {
+        "class_name": "Passwordless Login Solutions for Android",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "level": "Intermediate",
+        "period": "1 Week",
+        "student": null,
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/2_5vwMPz4.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "lecture.lecture",
+    "pk": 1330,
+    "fields": {
+        "class_name": "Shell Workshop",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "level": "Advanced",
+        "period": "1 Day",
+        "student": null,
+        "subject": "None",
+        "pre_ready": "None",
+        "lecture_image": "lecture/images/2021/08/11/1_fa2zxYc.PNG",
+        "category": null,
+        "max_member": 10,
+        "lecture_concern_count": 0,
+        "member": [],
+        "lecture_concern": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 1,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "111",
+        "content": "111",
+        "create_date": "2021-08-09T16:18:21.142",
+        "modify_date": null,
+        "voter": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 2,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "222",
+        "content": "222",
+        "create_date": "2021-08-09T16:18:23.892",
+        "modify_date": null,
+        "voter": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 3,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "333",
+        "content": "333",
+        "create_date": "2021-08-09T16:18:26.389",
+        "modify_date": null,
+        "voter": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 4,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "444",
+        "content": "444",
+        "create_date": "2021-08-09T16:18:30.883",
+        "modify_date": null,
+        "voter": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 5,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "555",
+        "content": "555",
+        "create_date": "2021-08-09T16:18:34.115",
+        "modify_date": null,
+        "voter": []
+    }
+},
+{
+    "model": "qna.question",
+    "pk": 6,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "subject": "1111111123123123",
+        "content": "11111111",
+        "create_date": "2021-08-09T18:15:12.168",
+        "modify_date": "2021-08-09T18:15:18.019",
+        "voter": []
+    }
+},
+{
+    "model": "qna.answer",
+    "pk": 1,
+    "fields": {
+        "author": [
+            "user"
+        ],
+        "question": 6,
+        "content": "123123123",
+        "create_date": "2021-08-09T18:15:20.329",
+        "modify_date": null,
+        "voter": []
+    }
+}
+]

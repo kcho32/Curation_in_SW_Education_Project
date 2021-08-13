@@ -1,44 +1,42 @@
 {% extends 'base.html' %}
+{% block title %}My Page - QnA{% endblock %}
 {% block main_area %}
+{% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<h1>나의 QnA</h1>
 <div class="row">
     <section id="my_question">
-      <h2 id="question">Question</h2>
-      <hr class="mb-4">
-      <div class="row">
-        <figure class=""></figure>
-        <div class="col-8">
+        <h2 id="question">Question</h2>
+        <hr class="mb-4">
+        <div class="row">
             {% for my_question in my_questions %}
-            <h5 class="row"><a href="{{ my_question.get_absolute_url }}">{{my_question.subject}} / {{my_question.create_date}}</a></h5>
-            {% endfor %}
-        </div><br>
-      </div>
+            <div class="row2 ml-2"><h5><a href="{{ my_question.get_absolute_url }}" class="text-success">{{my_question.subject}} / {{my_question.create_date}}</a></h5></div>
+            {% endfor %}<br>
+        </div>
     </section>
-
     <section id="my_answer">
-      <h2 id="answer">Answer</h2>
-      <hr class="mb-4">
-      <div class="row">
-        <figure class=""></figure>
-        <div class="col-8">
+        <h2 id="answer">Answer</h2>
+        <hr class="mb-4">
+        <div class="row">
             {% for my_answer in my_answers %}
-            <h5 class="row"><a href="{{ my_answer.get_absolute_url }}">{{my_answer.content}} / {{my_answer.create_date}}</a></h5>
+            <div class="row2 ml-2"><h5><a href="{{ my_answer.question.get_absolute_url }}" class="text-success">{{my_answer.content}} / {{my_answer.create_date}}</a></h5></div>
             {% endfor %}
-        </div><br>
-      </div>
+            <br>
+        </div>
     </section>
-
     <section id="my_comment">
-      <h2 id="comment">Comment</h2>
-      <hr class="mb-4">
-      <div class="row">
-        <figure class=""></figure>
-        <div class="col-8">
+        <h2 id="comment">Comment</h2>
+        <hr class="mb-4">
+        <div class="row">
             {% for my_comment in my_comments %}
-            <h5 class="row"><a href="{{ my_comment.get_absolute_url }}">{{my_comment.content}} / {{my_comment.create_date}}</a></h5>
+            {% if my_comment.question_id != NULL %}
+            <div class="row2 ml-2"><h5><a href="{{ my_comment.question.get_absolute_url }}" class="text-success">{{my_comment.content}} / {{my_comment.create_date}}</a></h5></div>
+            {% elif my_comment.answer_id != NULL %}
+            <div class="row2 ml-2"><h5><a href="{{ my_comment.answer.question.get_absolute_url }}" class="text-success">{{my_comment.content}} / {{my_comment.create_date}}</a></h5></div>
+            {% endif %}
             {% endfor %}
         </div><br>
-      </div>
     </section>
 </div>
 

@@ -43,18 +43,15 @@
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-
             <form class="login100-form validate-form" method="post" action="{% url 'common:find_pw' %}">
                 {% csrf_token %}
                 {% include "form_errors.html" %}
                 <span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape" onclick="location.href='/'"></i>
-					</span>
-
+                </span>
                 <span class="login100-form-title p-b-34 p-t-27">
 						Find PW
-					</span>
-
+                </span>
                 <div class="wrap-input100 validate-input" data-validate = "Enter User Name">
                     <input class="input100" type="text" name="username" placeholder="Username" id="username"
                            value="{{ form.username.value|default_if_none:'' }}">
@@ -65,13 +62,11 @@
                            value="{{ form.email.value|default_if_none:'' }}">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
-
                 <div class="wrap-input100 validate-input" data-validate = "Enter Last Name">
                     <input class="input100" type="text" name="last_name" placeholder="Last Name" id="last_name"
                            value="{{ form.last_name.value|default_if_none:'' }}">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
-
                 <div class="wrap-input100 validate-input" data-validate = "Enter First Name">
                     <input class="input100" type="text" name="first_name" placeholder="First Name" id="first_name"
                            value="{{ form.first_name.value|default_if_none:'' }}">
@@ -86,9 +81,6 @@
         </div>
     </div>
 </div>
-
-
-<div id="dropDownSelect1"></div>
 
 <!--===============================================================================================-->
 <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>

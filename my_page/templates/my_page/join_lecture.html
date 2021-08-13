@@ -1,11 +1,21 @@
-{% extends 'base.html' %}
+{% extends 'base_lecture_list.html' %}
 {% block main_area %}
+{% load static %}
 
-<div class ="">
-  <a href="{% url 'lecture:index' %}">강의목록 돌아가기</a>
-</div>
-<div class ="join">
-  수강신청 완료
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<div style = "padding-left:200px; padding-top:30px;">
+    <div class="row">
+        <h1>수강신청완료</h1>
+
+        <div class="col-lg-9 mt-0 pl-5">
+            <hr class="mb-4">
+            <div class="row">
+                <div class="row2"><a href="{% url 'lecture:index' %}" class="btn btn-outline-success float-right my-4">강의목록 돌아가기</a>
+                    <a href="{% url 'my_page:my_lecture' %}" class="btn btn-outline-success float-right my-4">수강강의목록</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

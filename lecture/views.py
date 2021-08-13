@@ -7,7 +7,7 @@ from django.core.exceptions import PermissionDenied
 
 class LectureList(ListView):
     model = Lecture
-    paginate_by = 6
+    paginate_by = 9
     paginate_orphans = 0
     ordering = '-pk'
 
