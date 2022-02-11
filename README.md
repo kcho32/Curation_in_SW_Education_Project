@@ -1,5 +1,3 @@
-## 멀티캠퍼스 융복합 프로젝트형 클라우드(MSA) 서비스 개발 과정 PROJECT #1
-
 ### 요약
 - Django를 이용한 MTV 패턴 기반의 웹사이트 구축
 
@@ -7,7 +5,7 @@
 
 - [시연 영상](https://youtu.be/UiiuZNOMpVA)
 
-- [PDF](https://drive.google.com/file/d/1MT9G0pTpsDtuoIORccpu5iGNpnIjz-94/view?usp=sharing)
+- [PDF](https://drive.google.com/file/d/1-Au0J4uCmTUNXPETdGo0ckkQSt5UkpNs/view?usp=sharing)
 
 --- 
 
